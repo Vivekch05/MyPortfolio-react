@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
+.header-color {
+  background: 'url(https://vsbytes.com/wp-content/uploads/2019/02/best-gaming-keyboard-india.jpeg)center/cover';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav.link-font {
+  font-size: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home-grid {
+  background: 'url(https://vsbytes.com/wp-content/uploads/2019/02/best-gaming-keyboard-india.jpeg)center/cover';
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+.home-text {
+  margin: auto;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-text1 p{
+  color: white; 
+  font-size: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin:auto;
+  padding-top: 30px;
+  width: 50em;
+  animation: type 8s steps(60, end); 
+}
+
+.home-text1 p:nth-child(2){
+  animation: type2 4s steps(30, end);
+}
+.home-text1 span{
+  animation: blink 1s infinite;
+  color: white;
+  font-weight: bold;
+}
+@keyframes type{ 
+  0%{width: 0;}
+} 
+
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+
+.projects-grid {
+  display: flex;
+}
+
+.resume-right-col {
+  background: white;
+  color: black;
+  padding: 5em;
+}
+
+.resume-left-col {
+  background: lightblue;
+  color: black;
+  padding: 5em;
+}
+
+.contact-left-grid {
+  background-image: linear-gradient(to bottom,lightblue,cornsilk);
+  color: black;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-left-grid h2 {
+  font-family: 'Anton', sans-serif;
+}
+
+.contact-left-grid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  padding: 3em;
+}
+
+.contact-right-grid {
+  text-align: center;
+  justify-content: center;
+  background: white;
+  padding-left: 5em;
+}
+
+.contact-right-grid h2 {
+  font-family: 'Anton', sans-serif;
+  color: black;
+}
+
+.contact-right-grid hr {
+  border-top: 5px dotted black;
+  margin: auto;
+  width: 50%;
+}
+
+.contact-list i {
+  font-size: 50px;
+  padding-right: 5rem;
+}
+
+.avater-img {
+  height: 300px;
+  padding-top: 0em;
+  width: 300px;
+  border-radius: 100%;
+  border: 1px solid white;
+  margin-top: 6em;
+}
+
+
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  font-size: 3em;
+  color: lightcyan;
+  padding: 8px;
+  margin-top: 1em;
+}
+
+.card-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-button Button {
+  background: darkblue;
+  color: white;
+  border-radius: 15px;
+}
+.card-button Button:hover {
+  background: Green;
+  color: white;
+  border-radius: 15px;
+}
+
+.card-text {
+  font-Family: 'Anton' sans-serif;
+  font-Weight: bold;
+  color: black;
+  border-Top: 1px solid grey
+}
+
+.aboutme-grid
+{
+ background: white;
+  justify-content: center;
+  text-align: center;
+  padding: 5em;
+  color: black;
+}
+.aboutme-grid h2 {
+}
+
+.aboutme-grid p {
+  font-weight: bold;
+  padding: 3em;
+  width: 75%; 
+  margin: auto; 
+  padding-Top: 1em;
+  text-align: justify;
 }
