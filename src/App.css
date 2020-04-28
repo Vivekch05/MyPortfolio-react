@@ -1,5 +1,5 @@
 .header-color {
-  background: 'url(https://vsbytes.com/wp-content/uploads/2019/02/best-gaming-keyboard-india.jpeg)center/cover';
+  background: 'url(https://images.unsplash.com/photo-1526925539332-aa3b66e35444?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80)center/cover';
 }
 
 nav.link-font {
@@ -8,7 +8,7 @@ nav.link-font {
 }
 
 .home-grid {
-  background: 'url(https://vsbytes.com/wp-content/uploads/2019/02/best-gaming-keyboard-india.jpeg)center/cover';
+  background: 'url(https://images.unsplash.com/photo-1526925539332-aa3b66e35444?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80)center/cover';
   text-align: center;
   position: fixed;
   top: 0;
@@ -16,51 +16,67 @@ nav.link-font {
   width: 100%;
   height: 100%;
   opacity: 0.9;
+  background-size: cover;
 }
+
 .home-text {
   margin: auto;
   color: white;
 }
 
-.home-text1 p{
-  color: white; 
+.home-text1 p {
+  color: white;
   font-size: 25px;
   white-space: nowrap;
   overflow: hidden;
-  margin:auto;
+  margin: auto;
   padding-top: 30px;
   width: 50em;
-  animation: type 8s steps(60, end); 
+  animation: type 8s steps(60, end);
 }
 
-.home-text1 p:nth-child(2){
-  animation: type2 4s steps(30, end);
+.home-text1 p:nth-child(2) {
+  animation: type2 4s steps(20, end);
 }
-.home-text1 span{
+
+.home-text1 label {
   animation: blink 1s infinite;
-  color: white;
+  color: red;
   font-weight: bold;
 }
-@keyframes type{ 
-  0%{width: 0;}
-} 
 
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
+@keyframes type {
+  0% {
+    width: 0;
+  }
 }
 
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  75%{width:0;}
+
+  100% {
+    width: 100;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
 
 .projects-grid {
   display: flex;
 }
-
+.resume-grid{
+  background-color: black;
+}
 .resume-right-col {
   background: white;
   color: black;
@@ -74,43 +90,88 @@ nav.link-font {
 }
 
 .contact-left-grid {
-  background-image: linear-gradient(to bottom,lightblue,cornsilk);
-  color: black;
+  background:black;
+  color: white;
   justify-content: center;
   text-align: center;
 }
 
-.contact-left-grid h2 {
+.contact-left-grid>h4 {
   font-family: 'Anton', sans-serif;
+  color: white;
 }
 
-.contact-left-grid p {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
-  padding: 3em;
+.contact-left-grid hr {
+  border-top: 5px solid white;
+  margin: auto;
+  width: 75%;
 }
+
 
 .contact-right-grid {
   text-align: center;
   justify-content: center;
-  background: white;
+  background: black;
   padding-left: 5em;
 }
 
-.contact-right-grid h2 {
+.contact-right-grid>h4 {
   font-family: 'Anton', sans-serif;
-  color: black;
+  color: white;
 }
 
 .contact-right-grid hr {
-  border-top: 5px dotted black;
+  border-top: 5px solid white;
   margin: auto;
-  width: 50%;
+  width: 75%;
 }
 
-.contact-list i {
+/* .contact-list i {
   font-size: 50px;
   padding-right: 5rem;
+} */
+
+.contact-list-group {
+  width: 500px;
+  margin: 30px;
+}
+
+.contact-list-item a {
+  text-decoration: none;
+  color: white;
+  height: 35px;
+  width: 100%;
+  border-radius: 30px;
+  padding-top: 20px;
+  box-shadow: 2px 2px grey;
+  border: 1px solid black;
+}
+
+.contact-list-item a:hover {
+  background-color: wheat;
+  color: black;
+}
+
+.contact-list-item i {
+  color: white;
+  border-radius: 100%;
+  margin-left: -8px;
+  height: 40px;
+  width: 50px;
+  padding-top: 20px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+  margin-right: -35px;
+  z-index: 1;
+}
+
+.contact-list-item i:hover {
+  transform: rotate(10deg);
+  transform: rotate(-10deg);
+}
+
+.contact-list-item:hover {
+  color: white;
 }
 
 .avater-img {
@@ -121,8 +182,6 @@ nav.link-font {
   border: 1px solid white;
   margin-top: 6em;
 }
-
-
 
 .social-links {
   display: flex;
@@ -148,6 +207,7 @@ nav.link-font {
   color: white;
   border-radius: 15px;
 }
+
 .card-button Button:hover {
   background: Green;
   color: white;
@@ -160,21 +220,113 @@ nav.link-font {
   color: black;
   border-Top: 1px solid grey
 }
+.aboutme-grid{
+  background:black
+}
 
-.aboutme-grid
-{
- background: white;
+.aboutme-left-grid {
   justify-content: center;
   text-align: center;
   padding: 5em;
-  color: black;
+  color: white;
 }
 
-.aboutme-grid p {
-  font-weight: bold;
+.aboutme-left-grid p {
   padding: 3em;
-  width: 75%; 
-  margin: auto; 
+  width: 70%;
+  margin: auto;
   padding-Top: 1em;
   text-align: justify;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.aboutme-left-grid>h4 {
+  font-family: 'Anton', sans-serif;
+  color: white;
+}
+
+.aboutme-grid hr {
+  border-top: 5px solid white;
+  margin: auto;
+  width: 75%;
+}
+.aboutme-left-grid-button button{
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  background: red;
+  border-radius: 30px;
+  color: black;
+  margin: 5px;
+  border: 2px solid red;
+  box-shadow: 2px 2px green;
+  font-size: 20px;
+}
+.aboutme-left-grid-button button:hover{
+  background: blue;
+  color: white;
+}
+.aboutme-left-grid-button a button i:hover{
+  transform: rotate(2deg);
+  transform: rotate(-2deg);
+}
+
+
+/* Contact Form  */
+.contact-form-head{
+  width: 550px;
+  margin-top: 60px;
+}
+.contact-form-head h1{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+}
+.contact-form{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: inline-flex;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.contact-form label{
+  color: white;
+  margin: 20px;
+  font-size: 20px;
+}
+.contact-form label input{
+  width: 320px;
+  height: 40px;
+  float: right;
+  border-radius: 15px;
+  box-shadow: 2px 2px grey;
+}
+.contact-form label textarea{
+  width: 320px;
+  height: 60px;
+  float: right;
+  border-radius: 15px;
+}
+.contact-form span{
+  margin-left: 140px;
+}
+.contact-form span input{
+  width: 160px;
+  margin:2px;
+  height: 40px;
+  background: red;
+  font-size: 20px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 2px 2px grey;
+  transition: width 2s height 2s;
+}
+.contact-form span input:hover{
+  background: green;
+width: 152px;
+height: 45px;
 }

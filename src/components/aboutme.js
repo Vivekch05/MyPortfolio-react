@@ -3,15 +3,22 @@ import { Grid, Cell } from 'react-mdl';
 export default class AboutMe extends Component {
     render() {
         return (
-            <Grid>
-                <Cell className="aboutme-grid" col={12}>
+            <Grid className="aboutme-grid" >
+                <Cell style={{borderRight:'1px solid white'}}col={4}>
                     <img
-                        src="https://lh3.googleusercontent.com/EYo5xN-ALewbKQMFAzNwx2AQpURzWlU4Ciw3UTHZhbiaceva7plNGcWTVOTpmuBz_USluJ6dstJhoAHyG1-A1YnEq5hWl7-k6fZINWbRgMD3zPefnRMNRyUOU4DUCqqu78PsqZ3xLqgdjgK87SlmmSAiEAzYrDVAXMuHWPC6ui6Rwl3pRZKk923pzp3O7nmID1X-se6Gj6P2QE5bxQKH2PJe3O1AcdU1ClHWIK7E6yXqV4G3Cbz-iUB2YBePszcTNyn8wSRlQtz8eeFBmF1Uom_4ZSyxhSNWBbpNJW97eGnA8rsCvgiiRMSlu4YzKGr7ug2ZgxvZ3Syj7cjH3wknZWi5Sf2Cn50a9xiL8hU5mAiesNHB7MsCwxEMG-npp6HvUD2qkQ1YogjuXh0P0VzXt5hThsRp0xVDf_xVpQd7k7naqJijPRbqIBmjrn4wwPxK15NZyvnDXyZiuoF9Nt_Qv_kVH_FZ2lWYtDidHzbTf5Y9T09BsZx8GBCsq4Dxgmd_OzIpnFDbutxKtW7nR8O0T-eRShBKVjZBI9NVtpkL0SZPg8FWGYCFRCF8nD8ftjXXaoVAgfvkMRaFsnfQVWA1YpOKur1rFyP4Ww3f8y7T-mpuGQuj3QCFfUnyKabO6_ZRixoCqRZOsT8IFFjHZY8SBynrmxi77funrY76oQ8cG9uN4OGRflkcVlF9h30eyt0=w707-h883-no"
+                        src="https://lh3.googleusercontent.com/n5tt8DkgthjgBJIuNrIkxHI_ehj8ZvaDwWLV_LcA1a4ykyTWS_7SPDP4vamuID4mXyhTL66qKtQYxaLwdvfQPS331NCiWg84MQjSrpQUm9Ee67xnJpzBglW2-xH6drkvrDEWSYM-gRbzPvd8kjSm-UhM5XtZVYvX8J_Et3XbRzBZw4jzd-pW9pe6odt65tNEUqRs8Ik-olEXs3dxG6JoIAytgRGOPIeFz3d0pXWJlSfSMAcTdtHbwhfMC4WfJB5xlqpMXSNsFPnRay3L5hip0OMY3dDnoQYJxUqWp3-3p18ayPOvLusp0hR9FdrndSgKA6IEb-mQX7a79viOG4BFihzOpp0EiTru125HY-GGwpbyiw1ObBBJ-jdqANe35iFbpc3CGSHygjPe79f-NSM3SIjQOu3VJU21wgI0ipnBYhU7gWhOdcWWD83nWHwGsso9fbDjcGOysZDMFCEWXDLsNbNpLvnyDXgjF9ArDUuXAUBeATvIPTgDWWCAGLXXFSBVTxrLhSpwSjBmoJzy-R1rssJmrLBlPERYwOsyXwYfJ1SMNkhnCJpN4ySRpXroupB5n9faXMjSEJo2lowCrbY2JtBVS9Pvvmk5yHT50xEjoPXWQraG_a_OlMBlHrPCiA0nhnEVFQAM5ue9WRdvBlMXU0XyB2GH2c5MYc-iMUgII5s2YBe8tyXdO1WiwgisL_I=s943-no"
                         alt="avatar"
-                        style={{ height: "300px", width: "300px", borderRadius: '100%',border:'1px solid black' }}
+                        style={{
+                            height: "450px", width: "380px", margin: '160px 70px 30px 50px',
+                            borderRadius: '10px', boxShadow: '5px 5px white', border: "1px solid white" 
+                        }}
                     />
-                    <h2>Vivek Chaurasia</h2>
+                </Cell>
+                <Cell className="aboutme-left-grid" col={8}>
+                    <h2>Vivek <span style={{ color: 'red' }}>Chaurasia</span></h2>
+                    <hr />
                     <p>I am a software engineer of GlobalLogic.It is a Digital Product Engineering Services company.
+                    I am working here from more than 1 year as a react developer.
                     I completed my btech from 'Jaipur engineering college and research centre'. I completed my 12th standard from
                     'R.k.d College patna'.
                     I completed my scholling and 10th standard from my native place 'R.s.high school parasauni farm'.
@@ -20,8 +27,15 @@ export default class AboutMe extends Component {
                     I am aValuable Team Player with Personable and Dedicated Nature.
                     My hobbies are traveling and cooking.
                     I am a fitnessfreak also i love exercise daily.
-
                     </p>
+                    <div className="aboutme-left-grid-button">
+                        <a href="https://doc-0k-0o-docs.googleusercontent.com/docs/securesc/i9t5s1bfr5vmrsa9h6sesheo0fj5a9n4/q0s06lv7p2rso87bmopu1icrodgegbvm/1588080825000/07376574442765908574/07376574442765908574/1MB0pivCebxWxgdnx2jFRSSpebY9AWvYR?e=download&authuser=1&nonce=jce52k4md614s&user=07376574442765908574&hash=n1rceeocah1d95uovn4tp9e0ma84cr9d"
+                            rel="noopener noreferrer" target="_blank" download="vivek-resume"><button><i class="fa fa-download" style={{ color: 'white' }}>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Grab Resume </i></button></a>
+
+                        <a href="tel:+917062424346" rel="noopener noreferrer" target="_blank" >
+                            <button><i class="fa fa-phone" style={{ color: 'white' }}>&nbsp;&nbsp;&nbsp;&nbsp;Contact Me</i></button></a>
+                    </div>
                 </Cell>
             </Grid>
 

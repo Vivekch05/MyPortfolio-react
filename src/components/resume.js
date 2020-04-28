@@ -8,11 +8,11 @@ export default class Resume extends Component {
     render() {
         return (
             <div>
-                <Grid>
+                <Grid className="resume-grid">
                     <Cell className="resume-left-col" col={4}>
                         <div style={{ textAlign: 'center' }}>
                         <img
-                        src="https://lh3.googleusercontent.com/FXMh1bqdPLKBwwojOrjGV_VBSgSRVdfBW2_bxelObtnpWktAgH4Rf0xts6kaXhaK2LTsgPcXSeUuhTEA9bBTKurWiAsm0ZXd_gLnZeaobw1CXYIHafhYzLWHiXWxl3Ja54pcuj-uHKmUVYqAlYYlPsT50sgUaMm81Inzyjbmov3d6ZZ519BiHY7QPvhmIVCBspC-yGyFwJia8UyztdgS0NEOLCZhFjEj_jor-2zPq-k3aihkX4kcwIXLzqTZf9dROiIVXTbQO-VEjpl8cVRJDHlXeO3L985KUFn_M7G77FwEBFaqsj9jVA0NCDkRmv5uiPnIj0cao2LUVAQtZ76tQLg8EPr23UIDSA45aAjcH_DGv1BI8kPOWmjed-zBsHxnNvUNaHhb9P_BY5rdKqUILrCM6C1826M5AhLnXOXavZ5pjX14hlOX_GpUPd4LlsOXTITwzHUHFEMRfYxfkmuhRlzbEArWOvZaZfBGSlNBYjU7xrHHC5d1MufsQqrdGZtG-pdi8Z50tw47jk0FVH9JNqUi2KCxS5d7WsZKUB-I78prE0P8TJ5uEGiJ37QQ0P7NEIQlShSUI3mCzWe4fAtqSyW-VFhej35dFOPcVRkhnSFnlaum511UwbE0MZ1ubOYvan3TlU9TbmZHi7eGj5zUiNWceDYCLcP3xua3sxSsXY9VKAj1dhB7upWfb_IgZ28=w707-h883-no"
+                        src="https://lh3.googleusercontent.com/n5tt8DkgthjgBJIuNrIkxHI_ehj8ZvaDwWLV_LcA1a4ykyTWS_7SPDP4vamuID4mXyhTL66qKtQYxaLwdvfQPS331NCiWg84MQjSrpQUm9Ee67xnJpzBglW2-xH6drkvrDEWSYM-gRbzPvd8kjSm-UhM5XtZVYvX8J_Et3XbRzBZw4jzd-pW9pe6odt65tNEUqRs8Ik-olEXs3dxG6JoIAytgRGOPIeFz3d0pXWJlSfSMAcTdtHbwhfMC4WfJB5xlqpMXSNsFPnRay3L5hip0OMY3dDnoQYJxUqWp3-3p18ayPOvLusp0hR9FdrndSgKA6IEb-mQX7a79viOG4BFihzOpp0EiTru125HY-GGwpbyiw1ObBBJ-jdqANe35iFbpc3CGSHygjPe79f-NSM3SIjQOu3VJU21wgI0ipnBYhU7gWhOdcWWD83nWHwGsso9fbDjcGOysZDMFCEWXDLsNbNpLvnyDXgjF9ArDUuXAUBeATvIPTgDWWCAGLXXFSBVTxrLhSpwSjBmoJzy-R1rssJmrLBlPERYwOsyXwYfJ1SMNkhnCJpN4ySRpXroupB5n9faXMjSEJo2lowCrbY2JtBVS9Pvvmk5yHT50xEjoPXWQraG_a_OlMBlHrPCiA0nhnEVFQAM5ue9WRdvBlMXU0XyB2GH2c5MYc-iMUgII5s2YBe8tyXdO1WiwgisL_I=s943-no"
                         alt="avatar"
                         style={{ height: "300px",width:"300px",borderRadius:'100%',border:'1px solid white' }}
                     />

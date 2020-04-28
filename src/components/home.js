@@ -8,13 +8,14 @@ export default class Home extends Component {
                 <Grid className="home-grid">
                     <Cell col={12}>
                     <img 
-                     src="https://lh3.googleusercontent.com/GYnkEMviCLKYWWGODhovJvRhBlYsD7iseSntQ4fMihd_72ViY5OpbD_5xlcjei7GgsetEfRFzvU1oFK8BekEriITXeGlQumR1IMpii9zr9M4YaIJe390U52f4CEGIQof5ThhL5VyIGH8coMkAMS5mAT76srHePWjdFry99cojpIoKkXZr1txSExWQE5XLIhjCIfXKdEXluTyq4i4THryJK1By7OhF2Kx8MKo6sQ3Zggatrvpcll2ZUChqjLEEsjpMzleEy5Tg32IRfOeuJMf3yl2Fpz5WyFQhSPBOtDTNFvQokEi_qVmOVa3vOkbo6sqTPc4rh2K0XKFY0BADpmcT4iB5iN4OBRb3hxg1_q72MrdZVlxn8cyg6RhEFdY8SZrVmvT1h5LMSuXwHm6htkDhYNtnhFeE4BH1Nb8AgOGsQ5_Pr4eDlGtwOGSU7VA2xuYZ55_GclUc37r6tFs9RVfIM4P6S-SOft89G_VecGkFaXir7XFrcLhSXLqHrYOUczKMq_bkgsJaHERXHzJC4G6qgTRxoNtfTw4oCHureahF7baUO8rRublMzvJztV7azb_A_3dK10w69W6tVru-sFFgymbYFEpteR0AUY5QoaEu9xs2_gCcKd-vw1GK_5LnG5XgOtSNJ420cg0blCbn7M4eWYs35rwFLHGpKkWBhy8uTWJfkNbdwNAgcHdQoZbpf8=s883-no"
+                     src="https://lh3.googleusercontent.com/n5tt8DkgthjgBJIuNrIkxHI_ehj8ZvaDwWLV_LcA1a4ykyTWS_7SPDP4vamuID4mXyhTL66qKtQYxaLwdvfQPS331NCiWg84MQjSrpQUm9Ee67xnJpzBglW2-xH6drkvrDEWSYM-gRbzPvd8kjSm-UhM5XtZVYvX8J_Et3XbRzBZw4jzd-pW9pe6odt65tNEUqRs8Ik-olEXs3dxG6JoIAytgRGOPIeFz3d0pXWJlSfSMAcTdtHbwhfMC4WfJB5xlqpMXSNsFPnRay3L5hip0OMY3dDnoQYJxUqWp3-3p18ayPOvLusp0hR9FdrndSgKA6IEb-mQX7a79viOG4BFihzOpp0EiTru125HY-GGwpbyiw1ObBBJ-jdqANe35iFbpc3CGSHygjPe79f-NSM3SIjQOu3VJU21wgI0ipnBYhU7gWhOdcWWD83nWHwGsso9fbDjcGOysZDMFCEWXDLsNbNpLvnyDXgjF9ArDUuXAUBeATvIPTgDWWCAGLXXFSBVTxrLhSpwSjBmoJzy-R1rssJmrLBlPERYwOsyXwYfJ1SMNkhnCJpN4ySRpXroupB5n9faXMjSEJo2lowCrbY2JtBVS9Pvvmk5yHT50xEjoPXWQraG_a_OlMBlHrPCiA0nhnEVFQAM5ue9WRdvBlMXU0XyB2GH2c5MYc-iMUgII5s2YBe8tyXdO1WiwgisL_I=s943-no"
                      alt="avater"
                      className="avater-img"
                      />
                      <div className="home-text1">
-                         <p>Hey, I am Vivek chaurasia.</p>
-                         <p>I love web designing and problem solving.I also love to learn new technology and tools. :)<span>|</span></p>
+                         <p>Hello there! I'm <span style={{color:'red',fontSize:'30px',fontWeight:'bold'}}>'Vivek Chaurasia'.</span></p>
+                         
+                         <p>I love web designing and problem solving.I also love to learn new technology and tools. :)<label>|</label></p>
                      </div>
                      <div className="social-links">
                          {/* Linkedin*/}
