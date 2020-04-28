@@ -29,12 +29,10 @@ nav.link-font {
   font-size: 25px;
   white-space: nowrap;
   overflow: hidden;
-  margin: auto;
+  margin: -20px auto;
   padding-top: 30px;
-  width: 50em;
-  animation: type 8s steps(60, end);
 }
-
+/* 
 .home-text1 p:nth-child(2) {
   animation: type2 4s steps(20, end);
 }
@@ -69,7 +67,7 @@ nav.link-font {
   to {
     opacity: .0;
   }
-}
+} */
 
 .projects-grid {
   display: flex;
@@ -192,9 +190,14 @@ nav.link-font {
 
 .social-links i {
   font-size: 3em;
-  color: lightcyan;
+  color: white;
   padding: 8px;
   margin-top: 1em;
+}
+.social-links i:hover{
+  color: red;
+  transform: rotate(1deg);
+  transform: rotate(-1deg);
 }
 
 .card-button {

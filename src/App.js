@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="demo-big-content">
       <Layout style={{
-        background: 'url(https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1093&q=80)center/cover'
-        , opacity: '0.8'
+        background: 'url(https://images.unsplash.com/photo-1487284122274-e864e9dec2bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80)center/cover'
+        , opacity: '0.9'
       }}>
         <Header transparent title={<Link style={{ textDecoration: "none", color: "white" }}
           to="/">MyPortfolio</Link>} scroll>

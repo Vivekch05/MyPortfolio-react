@@ -12,7 +12,6 @@ export default class Contact extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-
     }
     render() {
         return (
@@ -29,12 +28,12 @@ export default class Contact extends Component {
                             <label><b>Message:</b>
                                 <textarea type="text" name="message" value={this.state.message} onChange={this.handleChange} /></label>
                             <span><input type="reset" value="Clear" />
-                                <input type="submit" value="Send Message" /></span>
+                                <input type="submit" value="Send Message"/></span>
                         </form>
                     </div>
                 </Cell>
                 <Cell className="contact-right-grid" col={6}>
-                    <h4>Let's <span style={{ color: 'red' }}>Connect</span></h4>
+                    <h4>Let's <span style={{ color:"red"}} >Connect</span></h4>
                     <hr />
                     <List className="contact-list-group">
                         <ListItem className="contact-list-item">
