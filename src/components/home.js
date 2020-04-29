@@ -3,8 +3,6 @@ import { Grid, Cell } from 'react-mdl'
 
 export default class Home extends Component {
     render() {
-
-
         var TxtRotate = function (el, toRotate, period) {
             this.toRotate = toRotate;
             this.el = el;
@@ -86,7 +84,7 @@ export default class Home extends Component {
                             <span style={{ color: "orangered",fontSize:"30px" }}
                                     class="txt-rotate"
                                     data-period="2000"
-                                    data-rotate='[ "web development", "coding", "technology", "traveling", "cooking" ]'></span>
+                                    data-rotate='[ "web development","problem solving", "coding", "technology", "traveling", "cooking" ]'></span>
                             </p>
                         </div>
 

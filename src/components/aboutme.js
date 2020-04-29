@@ -24,7 +24,7 @@ export default class AboutMe extends Component {
                     I completed my scholling and 10th standard from my native place 'R.s.high school parasauni farm'.
                     I love learning new Things and Tools every day.
                     I loves programming and problem solving.
-                    I am aValuable Team Player with Personable and Dedicated Nature.
+                    I am valuable team player with personable and dedicated nature.
                     My hobbies are traveling and cooking.
                     I am a fitnessfreak also i love exercise daily.
                     </p>
