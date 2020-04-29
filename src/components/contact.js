@@ -15,27 +15,35 @@ export default class Contact extends Component {
     }
     render() {
         return (
-            <Grid>
-                <Cell className="contact-right-grid" col={6}>
-                    <h4>Let's have a <span style={{color:'red'}}>chat</span> sometime</h4>
+            <Grid className="contact-grid" >
+                <Cell className="contact-form" col={6}>
+                    <h4>Let's have a <span style={{ color: 'red', }}>chat</span> sometime</h4>
                     <hr />
-                    <div className="contact-form-head">
-                        <form className="contact-form" onSubmit={this.handleSubmit}>
-                            <label><b>Name:</b>
-                                <input type="text" name="name" value={this.state.name} onChange={this.handleChange} /></label>
-                            <label><b>Email:</b>
-                                <input name="email" value={this.state.email} onChange={this.handleChange} /></label>
-                            <label><b>Message:</b>
-                                <textarea type="text" name="message" value={this.state.message} onChange={this.handleChange} /></label>
-                            <span><input type="reset" value="Clear" />
-                                <input type="submit" value="Send Message"/></span>
-                        </form>
-                    </div>
+                    <form onSubmit={this.handleSubmit} style={{marginTop:"20px"}}>
+                        <div className="txtb">
+                            <label>Name:</label>
+                            <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
+                        </div>
+
+                        <div className="txtb">
+                            <label>Email:</label>
+                            <input name="email" value={this.state.email} onChange={this.handleChange} />
+                        </div>
+
+                        <div className="txtb">
+                            <label>Message:</label>
+                            <textarea type="text" name="message" value={this.state.message} onChange={this.handleChange} />
+                        </div>
+
+                        <div className="btn">
+                            <input type="reset" value="Clear" />
+                            <input type="submit" value="Send" /></div>
+                    </form>
                 </Cell>
-                <Cell className="contact-right-grid" col={6}>
-                    <h4>Let's <span style={{ color:"red"}} >Connect</span></h4>
-                    <hr />
-                    <List className="contact-list-group">
+                <Cell className="contact-list-group" col={6}>
+                    <List>
+                        <h4>Let's <span style={{ color: "red" }} >Connect</span></h4>
+                        <hr />
                         <ListItem className="contact-list-item">
                             <i class="fa fa-envelope fa-fw" style={{ background: 'green' }}></i>
                             <a href="https://mail.google.com/" style={{ background: 'green' }} target="_blank" rel="noopener noreferrer">vivek.kch05@gmail.com</a>

@@ -1,4 +1,3 @@
-
 nav.link-font {
   font-size: 30px;
   color: white;
@@ -29,6 +28,7 @@ nav.link-font {
   padding-top: 30px;
   text-shadow: 3px 3x black;
 }
+
 /* 
 .home-text1 p:nth-child(2) {
   animation: type2 4s steps(20, end);
@@ -68,10 +68,13 @@ nav.link-font {
 
 .projects-grid {
   display: flex;
+  flex-wrap: wrap;
 }
-.resume-grid{
+
+.resume-grid {
   background-color: black;
 }
+
 .resume-right-col {
   background: white;
   color: black;
@@ -84,51 +87,180 @@ nav.link-font {
   padding: 5em;
 }
 
-.contact-left-grid {
-  background:black;
-  color: white;
-  justify-content: center;
-  text-align: center;
+
+
+
+.avater-img {
+  height: auto;
+  padding-top: 0em;
+  width: 20%;
+  max-width: 500px;
+  border-radius: 100%;
+  margin-top: 150px;
+  box-shadow: 5px 5px lightblue;
+  min-width: 300px;
 }
 
-.contact-left-grid>h4 {
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  font-size: 3em;
+  color: white;
+  padding: 8px;
+  margin-top: 1em;
+}
+
+.social-links i:hover {
+  color: red;
+  transform: rotate(1deg);
+  transform: rotate(-1deg);
+}
+
+.card-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-button Button {
+  background: darkblue;
+  color: white;
+  border-radius: 15px;
+}
+
+.card-button Button:hover {
+  background: Green;
+  color: white;
+  border-radius: 15px;
+}
+
+.card-text {
+  color: black;
+  border-Top: 1px solid grey
+}
+
+.aboutme-grid {
+  background: black
+}
+.aboutme-right-grid{
+  margin-top: 95px;
+  margin-left: 30px;
+}
+
+.aboutme-right-grid>h2 {
+  font-family: 'Anton', sans-serif;
+  color: white;
+  padding-left: 80px;
+  display: flex;
+}
+.aboutme-right-grid hr {
+  border-top: 5px solid white;
+  margin-left: 150px;
+  width: 100%;
+  padding-left: 70px;
+  min-width: 300px;
+}
+
+
+
+.aboutme-left-grid {
+  justify-content: center;
+  text-align: center;
+  padding: 5em;
+  color: white;
+}
+
+.aboutme-left-grid p {
+  width: 90%;
+  margin: auto;
+  padding-Top: 1.5em;
+  text-align: justify;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.aboutme-left-grid>h2 {
   font-family: 'Anton', sans-serif;
   color: white;
 }
 
-.contact-left-grid hr {
+.aboutme-grid hr {
   border-top: 5px solid white;
   margin: auto;
-  width: 75%;
+  width: 100%;
 }
 
+.aboutme-left-grid-button button {
+  width: 350px;
+  height: 50px;
+  background: red;
+  border-radius: 30px;
+  color: black;
+  border: 2px solid red;
+  box-shadow: 2px 2px green;
+  font-size: 20px;
+  margin-top: 90px;
+}
 
-.contact-right-grid {
-  text-align: center;
-  justify-content: center;
+.aboutme-left-grid-button button:hover {
+  background: blue;
+  color: white;
+}
+
+.aboutme-left-grid-button a button i:hover {
+  transform: rotate(2deg);
+  transform: rotate(-2deg);
+}
+
+/* Contact Form  */
+
+.contact-grid{
   background: black;
-  padding-left: 5em;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.contact-right-grid>h4 {
-  font-family: 'Anton', sans-serif;
-  color: white;
-}
 
-.contact-right-grid hr {
-  border-top: 5px solid white;
-  margin: auto;
-  width: 75%;
-}
+
 
 /* .contact-list i {
   font-size: 50px;
   padding-right: 5rem;
 } */
+.contact-form-head{
+  width: 550px;
+  margin-top: 60px;
+}
+.contact-form-head h1{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+}
 
 .contact-list-group {
-  width: 500px;
-  margin: 30px;
+  margin: 100px;
+  top: 50%;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  padding: 0px 30px;
+  box-shadow: 5px 5px grey;
+}
+
+.contact-list-group h4 {
+  font-family: 'Anton', sans-serif;
+  color: black;
+}
+
+.contact-list-group hr {
+  border-top: 5px solid black;
+  margin: auto;
+  width: 85%;
 }
 
 .contact-list-item a {
@@ -140,6 +272,7 @@ nav.link-font {
   padding-top: 20px;
   box-shadow: 2px 2px grey;
   border: 1px solid black;
+  ;
 }
 
 .contact-list-item a:hover {
@@ -169,164 +302,75 @@ nav.link-font {
   color: white;
 }
 
-.avater-img {
-  height: 300px;
-  padding-top: 0em;
-  width: 300px;
-  border-radius: 100%;
-  margin-top: 6em;
-  box-shadow: 5px 5px lightblue;
-}
 
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: auto;
-}
 
-.social-links i {
-  font-size: 3em;
-  color: white;
-  padding: 8px;
-  margin-top: 1em;
-}
-.social-links i:hover{
-  color: red;
-  transform: rotate(1deg);
-  transform: rotate(-1deg);
-}
 
-.card-button {
-  display: flex;
-  justify-content: space-between;
-}
 
-.card-button Button {
-  background: darkblue;
-  color: white;
-  border-radius: 15px;
-}
 
-.card-button Button:hover {
-  background: Green;
-  color: white;
-  border-radius: 15px;
-}
 
-.card-text {
-  font-Family: 'Anton' sans-serif;
-  font-Weight: bold;
-  color: black;
-  border-Top: 1px solid grey
-}
-.aboutme-grid{
-  background:black
-}
 
-.aboutme-left-grid {
-  justify-content: center;
+.contact-form {
+  border-radius: 8px;
   text-align: center;
-  padding: 5em;
-  color: white;
+  background: white;
+  border-radius: 15px;
+  padding: 0px 30px;
+  box-shadow: 5px 5px grey;
+  padding-top: 30px;
 }
 
-.aboutme-left-grid p {
-  padding: 3em;
-  width: 70%;
-  margin: auto;
-  padding-Top: 1em;
-  text-align: justify;
-  margin-top: 50px;
-  font-size: 20px;
-}
-.aboutme-left-grid>h4 {
+
+.contact-form h4 {
   font-family: 'Anton', sans-serif;
-  color: white;
-}
-
-.aboutme-grid hr {
-  border-top: 5px solid white;
-  margin: auto;
-  width: 75%;
-}
-.aboutme-left-grid-button button{
-  width: 300px;
-  height: 50px;
-  margin-top: 20px;
-  background: red;
-  border-radius: 30px;
   color: black;
-  margin: 5px;
-  border: 2px solid red;
-  box-shadow: 2px 2px green;
-  font-size: 20px;
-}
-.aboutme-left-grid-button button:hover{
-  background: blue;
-  color: white;
-}
-.aboutme-left-grid-button a button i:hover{
-  transform: rotate(2deg);
-  transform: rotate(-2deg);
 }
 
-
-/* Contact Form  */
-.contact-form-head{
-  width: 550px;
-  margin-top: 60px;
-}
-.contact-form-head h1{
-  text-align: center;
-  font-size: 30px;
-  color: white;
-  padding: 20px;
-}
-.contact-form{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  display: inline-flex;
-  margin-bottom: 20px;
-  width: 500px;
+.contact-form hr {
+  border-top: 5px solid black;
+  margin: auto;
+  width: 85%;
 }
 
-.contact-form label{
-  color: white;
-  margin: 20px;
-  font-size: 20px;
-}
-.contact-form label input{
-  width: 320px;
-  height: 40px;
-  float: right;
-  border-radius: 15px;
-  box-shadow: 2px 2px grey;
-}
-.contact-form label textarea{
-  width: 320px;
-  height: 60px;
-  float: right;
-  border-radius: 15px;
-}
-.contact-form span{
-  margin-left: 140px;
-}
-.contact-form span input{
-  width: 160px;
-  margin:2px;
-  height: 40px;
-  background: red;
-  font-size: 20px;
-  color: white;
+.txtb {
   border: 1px solid black;
-  border-radius: 30px;
-  box-shadow: 2px 2px grey;
-  transition: width 2s height 2s;
+  margin: 30px;
+  padding: 12px 18px;
+  border-radius: 8px;
 }
-.contact-form span input:hover{
-  background: green;
-width: 152px;
-height: 45px;
+
+.txtb label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+}
+
+.txtb input, .txtb textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.btn input {
+  display: inline-block;
+  background: red;
+  color: white;
+  cursor: pointer;
+  margin-top: 0px 10px;
+  width: 48%;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin: 2px;
+  box-shadow: 2px 2px black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn input:hover {
+  background: blue;
 }

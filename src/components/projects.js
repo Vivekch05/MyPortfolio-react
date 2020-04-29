@@ -103,7 +103,7 @@ All the data of this application is handle through own created json server.
                         {/*Project 1 */}
                         <Card shaddow={10} style={{ height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
-                                fontWeight: "bold", color: "white", height: "200px", background:
+                                fontWeight: "bold", color: "black", height: "200px", background:
                                     'url(https://vectorified.com/images/angular-material-icon-set-18.png) center/cover'
                             }}>
                                 Angular Project #1</CardTitle>
@@ -163,7 +163,7 @@ All the data of this application is handle through own created json server.
                         {/*Project 1 */}
                         <Card shaddow={10} style={{ height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
-                                fontWeight: "bold", color: "white", height: "200px", background:
+                                fontWeight: "bold", color: "black", height: "200px", background:
                                     'url(https://beehosting.pro/wp-content/uploads/2019/02/html-i-css..jpg) center/cover'
                             }}>
                                 Html/Css Project #1</CardTitle>

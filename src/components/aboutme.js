@@ -5,17 +5,22 @@ export default class AboutMe extends Component {
         return (
             <Grid className="aboutme-grid" >
                 <Cell col={4}>
+                    <div className="aboutme-right-grid">
+                    <h2>Vivek <span style={{ color: 'red' }}>Chaurasia</span></h2>
+                    <hr/>
+                    </div>
                     <img
                         src="https://lh3.googleusercontent.com/n5tt8DkgthjgBJIuNrIkxHI_ehj8ZvaDwWLV_LcA1a4ykyTWS_7SPDP4vamuID4mXyhTL66qKtQYxaLwdvfQPS331NCiWg84MQjSrpQUm9Ee67xnJpzBglW2-xH6drkvrDEWSYM-gRbzPvd8kjSm-UhM5XtZVYvX8J_Et3XbRzBZw4jzd-pW9pe6odt65tNEUqRs8Ik-olEXs3dxG6JoIAytgRGOPIeFz3d0pXWJlSfSMAcTdtHbwhfMC4WfJB5xlqpMXSNsFPnRay3L5hip0OMY3dDnoQYJxUqWp3-3p18ayPOvLusp0hR9FdrndSgKA6IEb-mQX7a79viOG4BFihzOpp0EiTru125HY-GGwpbyiw1ObBBJ-jdqANe35iFbpc3CGSHygjPe79f-NSM3SIjQOu3VJU21wgI0ipnBYhU7gWhOdcWWD83nWHwGsso9fbDjcGOysZDMFCEWXDLsNbNpLvnyDXgjF9ArDUuXAUBeATvIPTgDWWCAGLXXFSBVTxrLhSpwSjBmoJzy-R1rssJmrLBlPERYwOsyXwYfJ1SMNkhnCJpN4ySRpXroupB5n9faXMjSEJo2lowCrbY2JtBVS9Pvvmk5yHT50xEjoPXWQraG_a_OlMBlHrPCiA0nhnEVFQAM5ue9WRdvBlMXU0XyB2GH2c5MYc-iMUgII5s2YBe8tyXdO1WiwgisL_I=s943-no"
                         alt="avatar"
                         style={{
-                            height: "450px", width: "380px", margin: '160px 70px 30px 50px',
-                            borderRadius: '10px', boxShadow: '5px 5px white', border: "1px solid white" 
+                            width: "80%",
+                            height: "60%", margin: '50px 70px 80px 70px',
+                            borderRadius: '10px', boxShadow: '5px 5px white', border: "1px solid white",minWidth:"300px"
                         }}
                     />
                 </Cell>
                 <Cell className="aboutme-left-grid" col={8}>
-                    <h2>Vivek <span style={{ color: 'red' }}>Chaurasia</span></h2>
+                    <h2>About <span style={{ color: 'red' }}>Me</span></h2>
                     <hr />
                     <p>I am a software engineer of GlobalLogic.It is a Digital Product Engineering Services company.
                     I am working here from more than 1 year as a react developer.
