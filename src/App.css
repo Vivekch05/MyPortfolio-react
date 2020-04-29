@@ -85,6 +85,7 @@ nav.link-font {
   background: lightblue;
   color: black;
   padding: 5em;
+  min-width: 480px;
 }
 
 

@@ -12,7 +12,7 @@ export default class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/*Project 1 */}
-                    <Card shaddow={10} style={{ height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                    <Card  style={{boxShadow:"5px 5px darkgrey",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                         <CardTitle style={{
                             fontWeight: "bold", color: "black", height: "200px", background:
                                 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png) center/cover'
@@ -43,7 +43,7 @@ All the data of this application is handle through own created json server.
                     </Card>
 
                     {/*Project 2 */}
-                    <Card shaddow={10} style={{ height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                    <Card  style={{boxShadow:"5px 5px darkgrey",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                         <CardTitle style={{
                             fontWeight: "bold", color: "black", height: "200px", background:
                                 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png) center/cover'
@@ -69,7 +69,7 @@ All the data of this application is handle through own created json server.
                     </Card>
 
                         {/*Project 3 */}
-                        <Card shaddow={10} style={{ height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                        <Card  style={{boxShadow:"5px 5px darkgrey",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "black", height: "200px", background:
                                     'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png) center/cover'
@@ -101,7 +101,7 @@ All the data of this application is handle through own created json server.
             return (
                     <div className="projects-grid">
                         {/*Project 1 */}
-                        <Card shaddow={10} style={{ height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                        <Card  style={{boxShadow:"5px 5px darkgrey",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "black", height: "200px", background:
                                     'url(https://vectorified.com/images/angular-material-icon-set-18.png) center/cover'
@@ -131,7 +131,7 @@ All the data of this application is handle through own created json server.
             return (
                     <div className="projects-grid">
                         {/*Project 1 */}
-                        <Card shaddow={10} style={{ height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                        <Card  style={{boxShadow:"5px 5px darkgrey",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "black", height: "200px", background:
                                     'url(https://cdn2.iconfinder.com/data/icons/metro-ui-dock/512/Java.png) center/cover'
@@ -161,9 +161,9 @@ All the data of this application is handle through own created json server.
             return (
                     <div className="projects-grid">
                         {/*Project 1 */}
-                        <Card shaddow={10} style={{ height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                        <Card  style={{boxShadow:"5px 5px darkgrey",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
-                                fontWeight: "bold", color: "black", height: "200px", background:
+                                fontWeight: "bold", color: "white", height: "200px", background:
                                     'url(https://beehosting.pro/wp-content/uploads/2019/02/html-i-css..jpg) center/cover'
                             }}>
                                 Html/Css Project #1</CardTitle>
