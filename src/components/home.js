@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Grid, Cell } from 'react-mdl'
+import { Grid, Cell } from 'react-mdl';
+import profile from "../images/vivek.jpg";
 
 export default class Home extends Component {
     render() {
@@ -68,7 +69,7 @@ export default class Home extends Component {
                 <Grid className="home-grid">
                     <Cell col={12}>
                         <img
-                            src="https://lh3.googleusercontent.com/n5tt8DkgthjgBJIuNrIkxHI_ehj8ZvaDwWLV_LcA1a4ykyTWS_7SPDP4vamuID4mXyhTL66qKtQYxaLwdvfQPS331NCiWg84MQjSrpQUm9Ee67xnJpzBglW2-xH6drkvrDEWSYM-gRbzPvd8kjSm-UhM5XtZVYvX8J_Et3XbRzBZw4jzd-pW9pe6odt65tNEUqRs8Ik-olEXs3dxG6JoIAytgRGOPIeFz3d0pXWJlSfSMAcTdtHbwhfMC4WfJB5xlqpMXSNsFPnRay3L5hip0OMY3dDnoQYJxUqWp3-3p18ayPOvLusp0hR9FdrndSgKA6IEb-mQX7a79viOG4BFihzOpp0EiTru125HY-GGwpbyiw1ObBBJ-jdqANe35iFbpc3CGSHygjPe79f-NSM3SIjQOu3VJU21wgI0ipnBYhU7gWhOdcWWD83nWHwGsso9fbDjcGOysZDMFCEWXDLsNbNpLvnyDXgjF9ArDUuXAUBeATvIPTgDWWCAGLXXFSBVTxrLhSpwSjBmoJzy-R1rssJmrLBlPERYwOsyXwYfJ1SMNkhnCJpN4ySRpXroupB5n9faXMjSEJo2lowCrbY2JtBVS9Pvvmk5yHT50xEjoPXWQraG_a_OlMBlHrPCiA0nhnEVFQAM5ue9WRdvBlMXU0XyB2GH2c5MYc-iMUgII5s2YBe8tyXdO1WiwgisL_I=s943-no"
+                            src={profile}
                             alt="avater"
                             className="avater-img"
                         />
@@ -79,12 +80,12 @@ export default class Home extends Component {
                      </div> */}
                         <div className="home-text1">
                             <p>Hello there!</p>
-                            <p>i'm <span style={{ color: "blue",fontSize:"30px"}}>'Vivek Chaurasia'</span></p>
+                            <p>i'm <span style={{ color: "red",fontSize:"30px"}}>'Vivek Chaurasia'</span></p>
                             <p>i love&nbsp;
-                            <span style={{ color: "orangered",fontSize:"30px" }}
+                            <span style={{ color: "orangered",fontSize:"30px"}}
                                     class="txt-rotate"
                                     data-period="2000"
-                                    data-rotate='[ "web development","problem solving", "coding", "technology", "traveling", "cooking" ]'></span>
+                                    data-rotate='[ "web development","problem solving", "coding", "to learn new technology"]'></span>
                             </p>
                         </div>
 

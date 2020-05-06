@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import reactPic from "../images/react.png"
+import angularPic from "../images/angular.png"
+import javaPic from "../images/Java.png"
+import htmlPic from "../images/html.jpg"
 
 export default class Projects extends Component {
     constructor(props) {
@@ -15,7 +19,7 @@ export default class Projects extends Component {
                     <Card  style={{boxShadow:"5px 5px darkgrey",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                         <CardTitle style={{
                             fontWeight: "bold", color: "black", height: "200px", background:
-                                'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png) center/cover'
+                                `url(${reactPic}) center/cover`
                         }}>
                             React Project #1</CardTitle>
                         <CardText align="justify" className="card-text" border><span style={{ color: "black", fontSize: "15px" }}><u>Book Store –React Redux-Application</u></span>--
@@ -46,7 +50,7 @@ All the data of this application is handle through own created json server.
                     <Card  style={{boxShadow:"5px 5px darkgrey",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                         <CardTitle style={{
                             fontWeight: "bold", color: "black", height: "200px", background:
-                                'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png) center/cover'
+                            `url(${reactPic}) center/cover`
                         }}>
                             React Project #2</CardTitle>
                         <CardText align="justify" className="card-text" border><span style={{ color: "black", fontSize: "15px" }}><u>MyPortfolio react</u></span>--
@@ -72,7 +76,7 @@ All the data of this application is handle through own created json server.
                         <Card  style={{boxShadow:"5px 5px darkgrey",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "black", height: "200px", background:
-                                    'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png) center/cover'
+                                `url(${reactPic}) center/cover`
                             }}>
                                 React Project #3</CardTitle>
                             <CardText className="card-text" border>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -104,7 +108,7 @@ All the data of this application is handle through own created json server.
                         <Card  style={{boxShadow:"5px 5px darkgrey",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "black", height: "200px", background:
-                                    'url(https://vectorified.com/images/angular-material-icon-set-18.png) center/cover'
+                                `url(${angularPic}) center/cover`
                             }}>
                                 Angular Project #1</CardTitle>
                             <CardText className="card-text" border>
@@ -134,7 +138,7 @@ All the data of this application is handle through own created json server.
                         <Card  style={{boxShadow:"5px 5px darkgrey",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "black", height: "200px", background:
-                                    'url(https://cdn2.iconfinder.com/data/icons/metro-ui-dock/512/Java.png) center/cover'
+                                `url(${javaPic}) center/cover`
                             }}>
                                 Java Project #1</CardTitle>
                             <CardText className="card-text" border>
@@ -164,7 +168,7 @@ All the data of this application is handle through own created json server.
                         <Card  style={{boxShadow:"5px 5px darkgrey",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "white", height: "200px", background:
-                                    'url(https://beehosting.pro/wp-content/uploads/2019/02/html-i-css..jpg) center/cover'
+                                `url(${htmlPic}) center/cover`
                             }}>
                                 Html/Css Project #1</CardTitle>
                             <CardText className="card-text" border>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the

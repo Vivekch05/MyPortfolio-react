@@ -69,37 +69,76 @@ nav.link-font {
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .resume-grid {
-  background-color: black;
+  background-image: linear-gradient(to bottom, grey, darkcyan, cornflowerblue);
 }
 
 .resume-right-col {
   background: white;
   color: black;
   padding: 5em;
+  min-width: 380px;
 }
 
 .resume-left-col {
-  background: lightblue;
-  color: black;
+  background-image: linear-gradient(to bottom, darkgrey, black, darkcyan, cornflowerblue);
+  color: white;
   padding: 5em;
-  min-width: 480px;
+  min-width: 380px;
 }
 
+/* .home-background {
+  position: relative;
+  background: url(./images/home.jpg) center/cover;
 
+}
 
+.home-background::after{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(127, 127, 127, 0.5);
+  background-image: radial-gradient(black 33%, transparent 33%);
+  background-size: 2px 2px;
+}  */
+
+/* .image {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Rathong_from_Zemathang2.jpg');
+  background-size: cover;
+}
+
+.image:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(127, 127, 127, 0.5);
+  background-image: radial-gradient(black 33%, transparent 33%);
+  background-size: 2px 2px;
+} */
 
 .avater-img {
   height: auto;
   padding-top: 0em;
-  width: 20%;
-  max-width: 500px;
+  width: 15%;
   border-radius: 100%;
   margin-top: 150px;
-  box-shadow: 5px 5px lightblue;
-  min-width: 300px;
+  box-shadow: 5px 5px 5px black;
+  min-width: 200px;
 }
 
 .social-links {
@@ -120,6 +159,10 @@ nav.link-font {
   color: red;
   transform: rotate(1deg);
   transform: rotate(-1deg);
+}
+
+.category-tabs {
+  background-image: linear-gradient(to bottom, darkgrey, black, darkcyan, cornflowerblue);
 }
 
 .card-button {
@@ -145,9 +188,10 @@ nav.link-font {
 }
 
 .aboutme-grid {
-  background: black
+  background-image: linear-gradient(to bottom, darkgrey, black, darkcyan, cornflowerblue);
 }
-.aboutme-right-grid{
+
+.aboutme-right-grid {
   margin-top: 95px;
   margin-left: 30px;
 }
@@ -155,18 +199,17 @@ nav.link-font {
 .aboutme-right-grid>h2 {
   font-family: 'Anton', sans-serif;
   color: white;
-  padding-left: 80px;
+  padding-left: 5px;
   display: flex;
 }
+
 .aboutme-right-grid hr {
   border-top: 5px solid white;
-  margin-left: 150px;
+  margin: auto;
   width: 100%;
-  padding-left: 70px;
-  min-width: 300px;
+  padding-left: 30px;
+  min-width: 250px;
 }
-
-
 
 .aboutme-left-grid {
   justify-content: center;
@@ -196,20 +239,21 @@ nav.link-font {
 }
 
 .aboutme-left-grid-button button {
-  width: 350px;
+  width: 40%;
   height: 50px;
-  background: red;
-  border-radius: 30px;
+  background: coral;
+  border-radius: 50px;
   color: black;
-  border: 2px solid red;
-  box-shadow: 2px 2px green;
+  border: 1px solid red;
   font-size: 20px;
+  min-width: 200px;
   margin-top: 90px;
+  flex-wrap: wrap;
 }
 
 .aboutme-left-grid-button button:hover {
-  background: blue;
-  color: white;
+  background: burlywood;
+  color: black;
 }
 
 .aboutme-left-grid-button a button i:hover {
@@ -219,24 +263,23 @@ nav.link-font {
 
 /* Contact Form  */
 
-.contact-grid{
-  background: black;
+.contact-grid {
+  background-image: linear-gradient(to bottom, darkgrey, black, darkcyan, cornflowerblue);
   display: flex;
   flex-flow: row wrap;
 }
-
-
-
 
 /* .contact-list i {
   font-size: 50px;
   padding-right: 5rem;
 } */
-.contact-form-head{
+
+.contact-form-head {
   width: 550px;
   margin-top: 60px;
 }
-.contact-form-head h1{
+
+.contact-form-head h1 {
   text-align: center;
   font-size: 30px;
   color: white;
@@ -244,22 +287,19 @@ nav.link-font {
 }
 
 .contact-list-group {
-  margin: 100px;
   top: 50%;
   text-align: center;
-  background: white;
   border-radius: 15px;
-  padding: 0px 30px;
-  box-shadow: 5px 5px grey;
+  padding: 0px 40px;
 }
 
 .contact-list-group h4 {
   font-family: 'Anton', sans-serif;
-  color: black;
+  color: white;
 }
 
 .contact-list-group hr {
-  border-top: 5px solid black;
+  border-top: 5px solid white;
   margin: auto;
   width: 85%;
 }
@@ -271,7 +311,7 @@ nav.link-font {
   width: 100%;
   border-radius: 30px;
   padding-top: 20px;
-  box-shadow: 2px 2px grey;
+  box-shadow: 2px 2px white;
   border: 1px solid black;
   ;
 }
@@ -303,46 +343,38 @@ nav.link-font {
   color: white;
 }
 
-
-
-
-
-
-
-
 .contact-form {
   border-radius: 8px;
   text-align: center;
-  background: white;
   border-radius: 15px;
-  padding: 0px 30px;
-  box-shadow: 5px 5px grey;
+  padding: 0px 65px;
   padding-top: 30px;
+  border-right: 1px solid white;
 }
-
 
 .contact-form h4 {
   font-family: 'Anton', sans-serif;
-  color: black;
+  color: white;
 }
 
 .contact-form hr {
-  border-top: 5px solid black;
+  border-top: 5px solid white;
   margin: auto;
   width: 85%;
 }
 
 .txtb {
-  border: 1px solid black;
+  border: 1px solid white;
   margin: 30px;
   padding: 12px 18px;
   border-radius: 8px;
+  background: white;
 }
 
 .txtb label {
   display: block;
   text-align: left;
-  font-size: 13px;
+  font-size: 20px;
   color: black;
   font-weight: bold;
 }
@@ -350,7 +382,6 @@ nav.link-font {
 .txtb input, .txtb textarea {
   width: 100%;
   border: none;
-  background: none;
   outline: none;
   font-size: 16px;
   margin-top: 6px;
@@ -358,7 +389,7 @@ nav.link-font {
 
 .btn input {
   display: inline-block;
-  background: red;
+  background: coral;
   color: white;
   cursor: pointer;
   margin-top: 0px 10px;
@@ -373,5 +404,6 @@ nav.link-font {
 }
 
 .btn input:hover {
-  background: blue;
+  background: burlywood;
+  color: black;
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Cell } from 'react-mdl';
+import profile from '../images/vivek.jpg'
 export default class AboutMe extends Component {
     render() {
         return (
@@ -10,12 +11,12 @@ export default class AboutMe extends Component {
                     <hr/>
                     </div>
                     <img
-                        src="https://lh3.googleusercontent.com/n5tt8DkgthjgBJIuNrIkxHI_ehj8ZvaDwWLV_LcA1a4ykyTWS_7SPDP4vamuID4mXyhTL66qKtQYxaLwdvfQPS331NCiWg84MQjSrpQUm9Ee67xnJpzBglW2-xH6drkvrDEWSYM-gRbzPvd8kjSm-UhM5XtZVYvX8J_Et3XbRzBZw4jzd-pW9pe6odt65tNEUqRs8Ik-olEXs3dxG6JoIAytgRGOPIeFz3d0pXWJlSfSMAcTdtHbwhfMC4WfJB5xlqpMXSNsFPnRay3L5hip0OMY3dDnoQYJxUqWp3-3p18ayPOvLusp0hR9FdrndSgKA6IEb-mQX7a79viOG4BFihzOpp0EiTru125HY-GGwpbyiw1ObBBJ-jdqANe35iFbpc3CGSHygjPe79f-NSM3SIjQOu3VJU21wgI0ipnBYhU7gWhOdcWWD83nWHwGsso9fbDjcGOysZDMFCEWXDLsNbNpLvnyDXgjF9ArDUuXAUBeATvIPTgDWWCAGLXXFSBVTxrLhSpwSjBmoJzy-R1rssJmrLBlPERYwOsyXwYfJ1SMNkhnCJpN4ySRpXroupB5n9faXMjSEJo2lowCrbY2JtBVS9Pvvmk5yHT50xEjoPXWQraG_a_OlMBlHrPCiA0nhnEVFQAM5ue9WRdvBlMXU0XyB2GH2c5MYc-iMUgII5s2YBe8tyXdO1WiwgisL_I=s943-no"
+                        src={profile}
                         alt="avatar"
                         style={{
                             width: "80%",
-                            height: "60%", margin: '50px 70px 80px 70px',
-                            borderRadius: '10px', boxShadow: '5px 5px white', border: "1px solid white",minWidth:"300px"
+                            height: "60%", margin: '50px 40px 80px 50px',
+                            borderRadius: '10px', boxShadow: '5px 5px 5px grey', border: "1px solid white",minWidth:"240px"
                         }}
                     />
                 </Cell>

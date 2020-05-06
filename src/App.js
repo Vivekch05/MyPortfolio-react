@@ -3,13 +3,13 @@ import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
+import homePic from "./images/home.jpg"
 function App() {
   return (
     <div className="demo-big-content">
       <Layout style={{
-        background: 'url(https://images.unsplash.com/photo-1487284122274-e864e9dec2bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80)center/cover'
-        , opacity: '0.9'
-      }}>
+        background: `url(${homePic}) center/cover`
+      }} >
         <Header transparent title={<Link style={{ textDecoration: "none", color: "white" }}
           to="/">MyPortfolio</Link>} scroll>
           <Navigation>
@@ -19,7 +19,7 @@ function App() {
             <Link style={{ color: 'white', fontSize: '20px', fontWeight: 'bold' }} to="contact">Contact</Link>
           </Navigation>
         </Header>
-        <Drawer title={<Link style={{ textDecoration: "none", color: "black" }}
+        <Drawer style={{color:"white"}} title={<Link style={{ textDecoration: "none", color: "black" }}
           to="/">MyPortfolio</Link>}>
           <Navigation>
             <Link to="/aboutme">About Me</Link>

@@ -15,7 +15,7 @@ export default class Contact extends Component {
     }
     render() {
         return (
-            <Grid className="contact-grid" >
+            <Grid className="contact-grid">
                 <Cell className="contact-form" col={6}>
                     <h4>Let's have a <span style={{ color: 'red', }}>chat</span> sometime</h4>
                     <hr />
@@ -65,8 +65,8 @@ export default class Contact extends Component {
                         </ListItem>
 
                         <ListItem className="contact-list-item">
-                            <i class="fa fa-instagram fa-fw" style={{ background: 'red' }}></i>
-                            <a href="http://www.instagram.com/vivek.kch05" style={{ background: 'red' }} target="_blank" rel="noopener noreferrer">instagram.com/vivek.kch05/</a>
+                            <i class="fa fa-instagram fa-fw" style={{ background: 'pink' }}></i>
+                            <a href="http://www.instagram.com/vivek.kch05" style={{ background: 'pink' }} target="_blank" rel="noopener noreferrer">instagram.com/vivek.kch05/</a>
                         </ListItem>
                     </List>
                 </Cell>
