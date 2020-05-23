@@ -7,7 +7,7 @@ export default class AboutMe extends Component {
             <Grid className="aboutme-grid" >
                 <Cell col={4}>
                     <div className="aboutme-right-grid">
-                    <h2>Vivek <span style={{ color: 'red' }}>&nbsp;Chaurasia</span></h2>
+                    <h3>Vivek <span style={{ color: 'red' }}>&nbsp;Chaurasia</span></h3>
                     <hr/>
                     </div>
                     <img

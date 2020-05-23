@@ -192,25 +192,22 @@ nav.link-font {
 }
 
 .aboutme-right-grid {
-  margin-top: 95px;
+  margin-top: 100px;
   margin-left: 30px;
 }
 
-.aboutme-right-grid>h2 {
+.aboutme-right-grid>h3 {
   font-family: 'Anton', sans-serif;
   color: white;
-  padding-left: 5px;
+  padding-left: 20px;
   display: flex;
 }
-
 .aboutme-right-grid hr {
   border-top: 5px solid white;
   margin: auto;
-  width: 100%;
-  padding-left: 30px;
+  width: 60%;
   min-width: 250px;
 }
-
 .aboutme-left-grid {
   justify-content: center;
   text-align: center;
