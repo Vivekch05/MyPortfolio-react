@@ -16,7 +16,7 @@ export default class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/*Project 1 */}
-                    <Card  style={{boxShadow:"5px 5px lightblue",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                    <Card  style={{boxShadow:"5px 5px darkorange",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                         <CardTitle style={{
                             fontWeight: "bold", color: "black", height: "200px", background:
                                 `url(${reactPic}) center/cover`
@@ -38,7 +38,7 @@ All the data of this application is handle through own created json server.
                             </div>
                         </CardActions>
 
-                        <a href="mailto:?subject=book store application &body=just testing" rel="noopener noreferrer" target="_blank">
+                        <a href="mailto:?subject=book store application &body=https://github.com/Vivekch05/Book-Store/tree/book-store" rel="noopener noreferrer" target="_blank">
                             <CardMenu style={{ color: "red" }}>
                                 <IconButton name="share" />
                             </CardMenu>
@@ -47,7 +47,7 @@ All the data of this application is handle through own created json server.
                     </Card>
 
                     {/*Project 2 */}
-                    <Card  style={{boxShadow:"5px 5px lightblue",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                    <Card  style={{boxShadow:"5px 5px darkorange",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                         <CardTitle style={{
                             fontWeight: "bold", color: "black", height: "200px", background:
                             `url(${reactPic}) center/cover`
@@ -67,13 +67,15 @@ All the data of this application is handle through own created json server.
                                     </a>
                                 </div>
                             </CardActions>
+                            <a href="mailto:?subject=book store application &body=http://www.vivekch.com/" rel="noopener noreferrer" target="_blank">
                             <CardMenu style={{ color: "red" }}>
                                 <IconButton name="share" />
                             </CardMenu>
+                        </a>
                     </Card>
 
                         {/*Project 3 */}
-                        <Card align="justify" style={{boxShadow:"5px 5px lightblue",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                        <Card align="justify" style={{boxShadow:"5px 5px darkorange",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "black", height: "200px", background:
                                 `url(${reactPic}) center/cover`
@@ -95,11 +97,13 @@ All the data of this application is handle through own created json server.
                                     </a>
                                 </div>
                             </CardActions>
+                            <a href="mailto:?subject=book store application &body=https://vivekch05.github.io/movie-series-info/#/" rel="noopener noreferrer" target="_blank">
                             <CardMenu style={{ color: "red" }}>
                                 <IconButton name="share" />
                             </CardMenu>
+                        </a>
                         </Card>
-                        <Card  style={{boxShadow:"5px 5px lightblue",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                        <Card  style={{boxShadow:"5px 5px darkorange",  height: '450px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "black", height: "200px", background:
                                 `url(${reactPic}) center/cover`
@@ -121,9 +125,11 @@ All the data of this application is handle through own created json server.
                                     </a>
                                 </div>
                             </CardActions>
+                            <a href="mailto:?subject=book store application &body=https://vivekch05.github.io/Tetris-Game/" rel="noopener noreferrer" target="_blank">
                             <CardMenu style={{ color: "red" }}>
                                 <IconButton name="share" />
                             </CardMenu>
+                        </a>
                         </Card>
                 </div>
             )
@@ -132,7 +138,7 @@ All the data of this application is handle through own created json server.
             return (
                     <div className="projects-grid">
                         {/*Project 1 */}
-                        <Card  style={{boxShadow:"5px 5px lightblue",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                        <Card  style={{boxShadow:"5px 5px darkorange",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "black", height: "200px", background:
                                 `url(${reactnativePic}) center/cover`
@@ -153,9 +159,11 @@ All the data of this application is handle through own created json server.
                                     </a>
                                 </div>
                             </CardActions>
+                            <a href="mailto:?subject=book store application &body=It will be shareable very soon :)" rel="noopener noreferrer" target="_blank">
                             <CardMenu style={{ color: "white" }}>
                                 <IconButton name="share" />
                             </CardMenu>
+                        </a>
                         </Card>
                     </div>
             )
@@ -164,7 +172,7 @@ All the data of this application is handle through own created json server.
             return (
                     <div className="projects-grid">
                         {/*Project 1 */}
-                        <Card  style={{boxShadow:"5px 5px lightblue",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                        <Card  style={{boxShadow:"5px 5px darkorange",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "black", height: "200px", background:
                                 `url(${javaPic}) center/cover`
@@ -183,9 +191,11 @@ All the data of this application is handle through own created json server.
                                     </a>
                                 </div>
                             </CardActions>
+                            <a href="mailto:?subject=book store application &body=It will be shareable very soon :)" rel="noopener noreferrer" target="_blank">
                             <CardMenu style={{ color: "white" }}>
                                 <IconButton name="share" />
                             </CardMenu>
+                        </a>
                         </Card>
                     </div>
             )
@@ -194,7 +204,7 @@ All the data of this application is handle through own created json server.
             return (
                     <div className="projects-grid">
                         {/*Project 1 */}
-                        <Card  style={{boxShadow:"5px 5px lightblue",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
+                        <Card  style={{boxShadow:"5px 5px darkorange",  height: '400px', margin: 'auto', border: '1px solid red', borderRadius: '20px' }}>
                             <CardTitle style={{
                                 fontWeight: "bold", color: "white", height: "200px", background:
                                 `url(${htmlPic}) center/cover`
@@ -214,9 +224,11 @@ All the data of this application is handle through own created json server.
                                     </a>
                                 </div>
                             </CardActions>
+                            <a href="mailto:?subject=book store application &body=It will be shareable very soon :)" rel="noopener noreferrer" target="_blank">
                             <CardMenu style={{ color: "white" }}>
                                 <IconButton name="share" />
                             </CardMenu>
+                        </a>
                         </Card>
                     </div>
             )

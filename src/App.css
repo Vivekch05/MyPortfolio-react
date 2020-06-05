@@ -75,20 +75,46 @@ nav.link-font {
 
 .resume-grid {
   background-image: linear-gradient(to bottom, grey, darkcyan, cornflowerblue);
+  width: 100%;
 }
 
 .resume-right-col {
   background: white;
   color: black;
   padding: 5em;
-  min-width: 380px;
+  min-width: 320px;
+  max-width: 100%;
 }
 
 .resume-left-col {
-  background-image: linear-gradient(to bottom, darkgrey, black, darkcyan, cornflowerblue);
+  background: black;
   color: white;
   padding: 5em;
-  min-width: 380px;
+  min-width: 320px;
+  max-width:100%;
+}
+
+.resume-left-col img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 100%;
+  border: 1px solid black;
+  box-shadow: 2px 2px grey;
+  margin: auto
+}
+
+@media screen and (min-width: 320px) {
+  .resume-left-col {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .resume-right-col {
+    padding: 2em 5em 2em 1em;
+    max-width: 100%;
+    /* background:green; */
+  }
 }
 
 /* .home-background {
@@ -162,7 +188,7 @@ nav.link-font {
 }
 
 .category-tabs {
-  background-image: linear-gradient(to bottom, darkgrey, black, darkcyan, cornflowerblue);
+  background: black;
 }
 
 .card-button {
@@ -188,31 +214,34 @@ nav.link-font {
 }
 
 .aboutme-grid {
-  background-image: linear-gradient(to bottom, darkgrey, black, darkcyan, cornflowerblue);
+  background: black;
 }
 
 .aboutme-right-grid {
-  margin-top: 100px;
   margin-left: 30px;
+  margin-top: 100px;
 }
 
 .aboutme-right-grid>h3 {
   font-family: 'Anton', sans-serif;
-  color: white;
-  padding-left: 20px;
+  color: darkorange;
+  padding-left: 25px;
   display: flex;
 }
+
 .aboutme-right-grid hr {
   border-top: 5px solid white;
   margin: auto;
   width: 60%;
   min-width: 250px;
 }
+
 .aboutme-left-grid {
   justify-content: center;
   text-align: center;
   padding: 5em;
-  color: white;
+  color: black;
+  background: white;
 }
 
 .aboutme-left-grid p {
@@ -226,11 +255,11 @@ nav.link-font {
 
 .aboutme-left-grid>h2 {
   font-family: 'Anton', sans-serif;
-  color: white;
+  color: black;
 }
 
 .aboutme-grid hr {
-  border-top: 5px solid white;
+  border-top: 5px solid black;
   margin: auto;
   width: 100%;
 }
@@ -261,9 +290,10 @@ nav.link-font {
 /* Contact Form  */
 
 .contact-grid {
-  background-image: linear-gradient(to bottom, darkgrey, black, darkcyan, cornflowerblue);
+  background: black;
   display: flex;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 /* .contact-list i {
@@ -271,8 +301,11 @@ nav.link-font {
   padding-right: 5rem;
 } */
 
+/* .contact-form{
+  max-width: 100%;
+}
 .contact-form-head {
-  width: 550px;
+  min-width: 320px;
   margin-top: 60px;
 }
 
@@ -281,13 +314,15 @@ nav.link-font {
   font-size: 30px;
   color: white;
   padding: 20px;
-}
+} */
 
 .contact-list-group {
+  max-width: 100%;
   top: 50%;
   text-align: center;
   border-radius: 15px;
   padding: 0px 40px;
+  min-width: 320px;
 }
 
 .contact-list-group h4 {
@@ -298,20 +333,34 @@ nav.link-font {
 .contact-list-group hr {
   border-top: 5px solid white;
   margin: auto;
-  width: 85%;
+  max-width: 100%;
 }
-
+.contact-list-item
+{
+  max-width: 100%;
+  margin: auto;
+}
 .contact-list-item a {
   text-decoration: none;
   color: white;
-  height: 35px;
+  height: 40px;
   width: 100%;
   border-radius: 30px;
   padding-top: 20px;
   box-shadow: 2px 2px white;
   border: 1px solid black;
-  ;
+  
 }
+@media screen and (min-width: 320px) {
+  .contact-list-item {
+    max-width: 100%;
+  }
+  .contact-list-item a{
+    width: 100%;
+
+  }
+}
+
 
 .contact-list-item a:hover {
   background-color: wheat;
@@ -321,7 +370,7 @@ nav.link-font {
 .contact-list-item i {
   color: white;
   border-radius: 100%;
-  margin-left: -8px;
+  margin-left: -15px;
   height: 40px;
   width: 50px;
   padding-top: 20px;
@@ -344,9 +393,9 @@ nav.link-font {
   border-radius: 8px;
   text-align: center;
   border-radius: 15px;
-  padding: 0px 65px;
-  padding-top: 30px;
+  padding: 20px 50px;
   border-right: 1px solid white;
+  min-width: 200px;
 }
 
 .contact-form h4 {
@@ -356,16 +405,17 @@ nav.link-font {
 
 .contact-form hr {
   border-top: 5px solid white;
-  margin: auto;
-  width: 85%;
+  width: 100%;
 }
 
 .txtb {
   border: 1px solid white;
-  margin: 30px;
-  padding: 12px 18px;
+  margin: 30px 0;
   border-radius: 8px;
   background: white;
+  max-width: 100%;
+  padding: 10px;
+  min-width: 200px;
 }
 
 .txtb label {
@@ -381,7 +431,12 @@ nav.link-font {
   border: none;
   outline: none;
   font-size: 16px;
-  margin-top: 6px;
+  min-width: 200px;
+}
+
+@media screen and(min-width:200px)
+{
+  
 }
 
 .btn input {

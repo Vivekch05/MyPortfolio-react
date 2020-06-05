@@ -3,6 +3,7 @@ import { Grid, Cell } from 'react-mdl';
 import profile from "../images/vivek.jpg";
 
 export default class Home extends Component {
+
     render() {
         var TxtRotate = function (el, toRotate, period) {
             this.toRotate = toRotate;

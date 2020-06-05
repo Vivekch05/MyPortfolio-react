@@ -1,26 +1,25 @@
 import React, { Component } from 'react'
 import { Grid, Cell } from 'react-mdl';
-import profile from '../images/vivek.jpg'
+import profile from '../images/vivek1.jpg'
 export default class AboutMe extends Component {
     render() {
         return (
             <Grid className="aboutme-grid" >
-                <Cell col={4}>
-                    <div className="aboutme-right-grid">
-                    <h3>Vivek <span style={{ color: 'red' }}>&nbsp;Chaurasia</span></h3>
-                    <hr/>
-                    </div>
+                <Cell style={{background:'white'}}col={6}>
+
                     <img
                         src={profile}
                         alt="avatar"
                         style={{
-                            width: "80%",
-                            height: "60%", margin: '50px 40px 80px 50px',
-                            borderRadius: '10px', boxShadow: '5px 5px 5px grey', border: "1px solid white",minWidth:"240px"
+                            margin:'30px',
+                            border:'5px groove black',
+                            maxWidth: '80%',
+                            height: 'auto',
+                            width: 'auto\9',
                         }}
                     />
                 </Cell>
-                <Cell className="aboutme-left-grid" col={8}>
+                <Cell className="aboutme-left-grid" col={6}>
                     <h2>About <span style={{ color: 'red' }}>Me</span></h2>
                     <hr />
                     <p>I am a software engineer of GlobalLogic.It is a Digital Product Engineering Services company.
@@ -35,7 +34,7 @@ export default class AboutMe extends Component {
                     I am a fitnessfreak also i love exercise daily.
                     </p>
                     <div className="aboutme-left-grid-button">
-                        <a href="https://doc-0k-0o-docs.googleusercontent.com/docs/securesc/i9t5s1bfr5vmrsa9h6sesheo0fj5a9n4/q0s06lv7p2rso87bmopu1icrodgegbvm/1588080825000/07376574442765908574/07376574442765908574/1MB0pivCebxWxgdnx2jFRSSpebY9AWvYR?e=download&authuser=1&nonce=jce52k4md614s&user=07376574442765908574&hash=n1rceeocah1d95uovn4tp9e0ma84cr9d"
+                        <a href="https://drive.google.com/drive/u/1/folders/1kJsRCk0MkF055tqPVNpQin-3MwVMeqnp"
                             rel="noopener noreferrer" target="_blank" download="vivek-resume"><button><i class="fa fa-download" style={{ color: 'white' }}>
                                 &nbsp;&nbsp;&nbsp;&nbsp;Grab Resume </i></button></a>
 
