@@ -5,14 +5,15 @@ export default class AboutMe extends Component {
     render() {
         return (
             <Grid className="aboutme-grid" >
-                <Cell style={{background:'white'}}col={6}>
+                <Cell style={{borderRight:"1px solid black",borderRadius:"20px"}} col={6}>
 
                     <img
                         src={profile}
                         alt="avatar"
                         style={{
-                            margin:'30px',
-                            border:'5px groove black',
+                            margin: '30px',
+                            marginTop:"105px",
+                            border: '2px groove black',
                             maxWidth: '80%',
                             height: 'auto',
                             width: 'auto\9',
@@ -22,16 +23,15 @@ export default class AboutMe extends Component {
                 <Cell className="aboutme-left-grid" col={6}>
                     <h2>About <span style={{ color: 'red' }}>Me</span></h2>
                     <hr />
-                    <p>I am a software engineer of GlobalLogic.It is a Digital Product Engineering Services company.
-                    I am working here from more than 1 year as a react developer.
-                    I completed my btech from 'Jaipur engineering college and research centre'. I completed my 12th standard from
-                    'R.k.d College patna'.
-                    I completed my scholling and 10th standard from my native place 'R.s.high school parasauni farm'.
-                    I love learning new Things and Tools every day.
-                    I loves programming and problem solving.
+                    <p>I am a software engineer approx 2 years of experience.My primary skill is react js ,redux and secondary skill is
+                    java, springBoot.I always love to learn new technology and tools.
                     I am valuable team player with personable and dedicated nature.
-                    My hobbies are traveling and cooking.
-                    I am a fitnessfreak also i love exercise daily.
+                    I am flexible and adaptable also.I loves programming and problem solving.
+                    I completed my btech from 'Jaipur engineering college and research centre'. 
+                    I completed my 12th standard from 'R.k.d College patna'.
+                    I completed my scholling and 10th standard from my native place 'R.s.high school parasauni farm'.
+                    I like traveling and cooking.
+                    I am a fitnessfreak also ,i love exercise daily.
                     </p>
                     <div className="aboutme-left-grid-button">
                         <a href="https://drive.google.com/drive/u/1/folders/1kJsRCk0MkF055tqPVNpQin-3MwVMeqnp"

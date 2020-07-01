@@ -74,7 +74,6 @@ nav.link-font {
 }
 
 .resume-grid {
-  background-image: linear-gradient(to bottom, grey, darkcyan, cornflowerblue);
   width: 100%;
 }
 
@@ -87,8 +86,8 @@ nav.link-font {
 }
 
 .resume-left-col {
-  background: black;
-  color: white;
+  background:antiquewhite;
+  color: black;
   padding: 5em;
   min-width: 320px;
   max-width:100%;
@@ -98,8 +97,8 @@ nav.link-font {
   height: auto;
   max-width: 100%;
   border-radius: 100%;
-  border: 1px solid black;
-  box-shadow: 2px 2px grey;
+  border: 1px solid white;
+  box-shadow: 2px 2px lightgrey;
   margin: auto
 }
 
@@ -116,10 +115,10 @@ nav.link-font {
     /* background:green; */
   }
 }
-
-/* .home-background {
+/* 
+ .home-background {
   position: relative;
-  background: url(./images/home.jpg) center/cover;
+  background: url(./images/home14.jpg) center/cover;
 
 }
 
@@ -133,8 +132,8 @@ nav.link-font {
   bottom: 0;
   background: rgba(127, 127, 127, 0.5);
   background-image: radial-gradient(black 33%, transparent 33%);
-  background-size: 2px 2px;
-}  */
+  background-size: 1px 1px;
+}    */
 
 /* .image {
   width: 800px;
@@ -163,7 +162,7 @@ nav.link-font {
   width: 15%;
   border-radius: 100%;
   margin-top: 150px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px  black;
   min-width: 200px;
 }
 
@@ -188,7 +187,6 @@ nav.link-font {
 }
 
 .category-tabs {
-  background: black;
 }
 
 .card-button {
@@ -214,7 +212,10 @@ nav.link-font {
 }
 
 .aboutme-grid {
-  background: black;
+  /* background: url(./images/home14.jpg) center/cover; */
+  background:antiquewhite;
+
+  
 }
 
 .aboutme-right-grid {
@@ -241,7 +242,6 @@ nav.link-font {
   text-align: center;
   padding: 5em;
   color: black;
-  background: white;
 }
 
 .aboutme-left-grid p {
@@ -275,6 +275,7 @@ nav.link-font {
   min-width: 200px;
   margin-top: 90px;
   flex-wrap: wrap;
+  margin-right: 5px;
 }
 
 .aboutme-left-grid-button button:hover {
@@ -290,7 +291,7 @@ nav.link-font {
 /* Contact Form  */
 
 .contact-grid {
-  background: black;
+
   display: flex;
   flex-flow: row wrap;
   width: 100%;

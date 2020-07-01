@@ -18,11 +18,11 @@ export default class Resume extends Component {
                                 style={{ }}
                             />
                         </div>
-                        <h2 style={{ color: "white" }}>Vivek Chaurasia</h2>
-                        <u><h4 style={{ paddingBottom: '1em', color: 'lightgrey', textAlign: 'center' }}>Software Engineer</h4></u>
+                        <h2 style={{ color: "black" }}>Vivek Chaurasia</h2>
+                        <u><h4 style={{ paddingBottom: '1em', color: 'gray', textAlign: 'center' }}>Software Engineer</h4></u>
 
                         <i class="fa fa-address-book fa-3x" style={{ color: 'darkorange' }}>&nbsp;&nbsp;Personal info</i>
-                        <hr style={{ borderTop: '3px solid white', width: '100%' }} />
+                        <hr style={{ borderTop: '3px solid black', width: '100%' }} />
                         <p><span style={{ fontSize: '15px', fontWeight: 'bold' }}>Place:&nbsp;&nbsp;</span><span>Bibi Bankatwa,West Champaran,Bihar-845101</span></p>
                         <p><span style={{ fontSize: '15px', fontWeight: 'bold' }}>Date of birth:&nbsp;&nbsp;</span><span>25/03/1996</span></p>
                         <p><span style={{ fontSize: '15px', fontWeight: 'bold' }}>Web:&nbsp;&nbsp;</span><span>www.vivekch.com</span></p>
@@ -30,12 +30,12 @@ export default class Resume extends Component {
                         <p><span style={{ fontSize: '15px', fontWeight: 'bold' }}>Email:&nbsp;&nbsp;</span><span>vivek.kch05@gmail.com</span></p>
 
                         <i class="fa fa-user-circle fa-3x" style={{ color: 'darkorange' }}>&nbsp;&nbsp;Profile</i>
-                        <hr style={{ borderTop: '3px solid white', width: '100%' }} />
+                        <hr style={{ borderTop: '3px solid black', width: '100%' }} />
                         <p align="justify"> Software Engineer with more than 1 Year of Experience.Experience in UI Development.
                         Valuable Team Player with Personable and Dedicated Nature.Love Learning New Things and Tools Every Day. If I don’t know something I will learn it</p>
 
                         <i class="fa fa-briefcase fa-3x" style={{ color: 'darkorange' }}>&nbsp;Work Experience</i>
-                        <hr style={{ borderTop: '3px solid white', width: '100%' }} />
+                        <hr style={{ borderTop: '3px solid black', width: '100%' }} />
                         <Experience
                             companyName="GlobalLogic"
                             designation="Software Engineer"
@@ -45,7 +45,7 @@ export default class Resume extends Component {
                             descreption={""}
                         />
                         <i class="fa fa-laptop fa-3x" style={{ color: 'darkorange' }}>&nbsp;&nbsp;Skills</i>
-                        <hr style={{ borderTop: '3px solid white', width: '100%' }} />
+                        <hr style={{ borderTop: '3px solid black', width: '100%' }} />
 
                         <Skills
                             skill="Java"

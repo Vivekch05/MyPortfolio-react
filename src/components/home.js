@@ -4,6 +4,7 @@ import profile from "../images/vivek.jpg";
 
 export default class Home extends Component {
 
+
     render() {
         var TxtRotate = function (el, toRotate, period) {
             this.toRotate = toRotate;
@@ -67,7 +68,7 @@ export default class Home extends Component {
 
         return (
             <div style={{ width: "100%", margin: "auto" }}>
-                <Grid className="home-grid">
+                <Grid  className="home-grid">
                     <Cell col={12}>
                         <img
                             src={profile}
@@ -81,9 +82,9 @@ export default class Home extends Component {
                      </div> */}
                         <div className="home-text1">
                             <p>Hello there!</p>
-                            <p>i'm <span style={{ color: "red",fontSize:"30px"}}>'Vivek Chaurasia'</span></p>
+                            <p>i'm <span style={{ color: "aliceblue",fontSize:"30px"}}>'Vivek Chaurasia'</span></p>
                             <p>i love&nbsp;
-                            <span style={{ color: "orangered",fontSize:"30px"}}
+                            <span style={{ color: "darkorange",fontSize:"30px"}}
                                     class="txt-rotate"
                                     data-period="2000"
                                     data-rotate='[ "web development","problem solving", "coding", "to learn new technology"]'></span>

@@ -3,7 +3,7 @@ import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
-import homePic from "./images/home.jpg"
+import homePic from "./images/home18.png"
 function App() {
   return (
     <div className="demo-big-content">
