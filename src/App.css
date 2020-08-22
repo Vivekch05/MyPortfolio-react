@@ -90,7 +90,7 @@ nav.link-font {
   color: black;
   padding: 5em;
   min-width: 320px;
-  max-width:100%;
+  max-width:100;
 }
 
 .resume-left-col img {
@@ -187,6 +187,7 @@ nav.link-font {
 }
 
 .category-tabs {
+  margin-top: 30px;
 }
 
 .card-button {
