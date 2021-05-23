@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Grid, Cell } from 'react-mdl'
 
 export default class Home extends Component {
+componentDidMount(){}
+
     render() {
         return (
             <div style={{width: "100%", margin:"auto"}}>

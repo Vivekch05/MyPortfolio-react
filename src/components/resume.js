@@ -108,3 +108,61 @@ export default class Resume extends Component {
         )
     }
 }
+
+// import React,{ Component } from "react";
+// import { Document, Page,pdfjs } from "react-pdf";
+// import samplePDF from '../files/resume.pdf'
+
+
+// export default class Resume extends Component {
+//     constructor(props){
+//         super(props);
+//         pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+//         this.state={
+//             numPages:null,
+//         }
+//     }
+
+//    onDocumentLoadSuccess = ( numPages1 ) => {
+//        console.log(numPages1,'ksjfhsjd')
+//     this.setState({numPages:numPages1});
+//   }
+
+//   // decodeBase64(str) {
+//   //   if (str !== null && str !== undefined && str.length) {
+//   //     try {
+//   //       atob(str);
+//   //       return `data:application/pdf;base64,${str}`;
+//   //     } catch (e) {
+//   //       return str;
+//   //     }
+//   //   }
+//   //   return '';
+//   // }
+
+// render(){
+//     console.log(Array.apply(null, Array(this.state.numPages)),this.state.numPages,'dsgfj');
+// // const {pdf} = this.props
+// // let fileBlob = this.decodeBase64(samplePDF);
+// // console.log(`data:application/pdf;base64,${fileBlob}`,'dgldfgdo')
+//   return (
+            
+//             <div className="all-page-container" >
+//     <Document
+//       file={samplePDF}
+//       // file={`data:application/pdf;base64,${fileBlob}`}
+//       options={{ workerSrc: "/pdf.worker.js" }}
+//       onLoadSuccess={()=>this.onDocumentLoadSuccess()}
+      
+//     >
+
+//         {[1,2,3].map(page => (
+//             <Page pageNumber={page} 
+//              />
+//         ))}
+
+//     </Document>
+//     </div>
+//   );
+//       }
+// }

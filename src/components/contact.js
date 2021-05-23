@@ -1,25 +1,83 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
+import { Grid, Cell, List, ListItem } from 'react-mdl';
+import {send} from 'emailjs-com'
 export default class Contact extends Component {
+    constructor(props) {
+        super(props);
+        this.state = this.initialState;
+    }
+    initialState = {
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+    }
+
+    handleChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value });
+        console.log(this.state);
+    }
+    
+     handleSubmit = (e) => {
+        e.preventDefault();
+        let templateParams = {
+            name:this.state.name,
+            from_name: this.state.email,
+            to_name: 'vivek.ece18@gmail.com',
+            subject: this.state.subject,
+            message: this.state.message,
+            reply_to:this.state.email
+           }
+        send(
+            // 'gmail',
+          'service_*****',
+          'template_******',
+        //   this.initialState,
+        templateParams,
+          'user_*******'
+        )
+          .then((response) => {
+            alert('SUCCESS!', response.status, response.text);
+          })
+          .catch((err) => {
+            alert('FAILED...', err);
+          });
+      };
+    handleReset = () => {
+        this.setState(() => this.initialState);
+        console.log(this.initialState);
+
+    }
     render() {
         return (
-            <Grid>
-                <Cell className="contact-left-grid" col={6}>
-                    <h2>Vivek Chaurasia</h2>
-                    <img
-                        src="https://lh3.googleusercontent.com/GYnkEMviCLKYWWGODhovJvRhBlYsD7iseSntQ4fMihd_72ViY5OpbD_5xlcjei7GgsetEfRFzvU1oFK8BekEriITXeGlQumR1IMpii9zr9M4YaIJe390U52f4CEGIQof5ThhL5VyIGH8coMkAMS5mAT76srHePWjdFry99cojpIoKkXZr1txSExWQE5XLIhjCIfXKdEXluTyq4i4THryJK1By7OhF2Kx8MKo6sQ3Zggatrvpcll2ZUChqjLEEsjpMzleEy5Tg32IRfOeuJMf3yl2Fpz5WyFQhSPBOtDTNFvQokEi_qVmOVa3vOkbo6sqTPc4rh2K0XKFY0BADpmcT4iB5iN4OBRb3hxg1_q72MrdZVlxn8cyg6RhEFdY8SZrVmvT1h5LMSuXwHm6htkDhYNtnhFeE4BH1Nb8AgOGsQ5_Pr4eDlGtwOGSU7VA2xuYZ55_GclUc37r6tFs9RVfIM4P6S-SOft89G_VecGkFaXir7XFrcLhSXLqHrYOUczKMq_bkgsJaHERXHzJC4G6qgTRxoNtfTw4oCHureahF7baUO8rRublMzvJztV7azb_A_3dK10w69W6tVru-sFFgymbYFEpteR0AUY5QoaEu9xs2_gCcKd-vw1GK_5LnG5XgOtSNJ420cg0blCbn7M4eWYs35rwFLHGpKkWBhy8uTWJfkNbdwNAgcHdQoZbpf8=s883-no"
-                        alt="avatar"
-                        style={{ height: "300px",width:"300px",borderRadius:'100%',border:'1px solid black' }}
-                     />
-                    <p align="justify" style={{ width: '75%', margin: 'auto', paddingTop: '1em' }}>
-                    I am a software engineer of GlobalLogic.It is a Digital Product Engineering Services company. 
-                    I completed my btech from 'Jaipur engineering college and research centre'. 
-                    I completed my 12th standard from 'R.k.d College patna'. 
-                    I completed my scholling and 10th standard from my native place 'R.s.high school parasauni farm'.
-                     I love learning new Things and Tools every day. I loves programming and problem solving. 
-                     I am aValuable Team Player with Personable and Dedicated Nature. My hobbies are traveling and cooking.
-                      I am a fitnessfreak also i love exercise daily.
-                        </p>
+            <Grid className="contact-grid">
+                <Cell className="contact-form" col={6}>
+                    <h4>Let's have a <span style={{ color: 'red', }}>chat</span> sometime</h4>
+                    <hr />
+                    <form onSubmit={this.handleSubmit} onReset={this.handleReset} style={{ marginTop: "20px" }}>
+                    <div className="txtb">
+                            <label>Subject:</label>
+                            <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange} />
+                        </div>
+                        <div className="txtb">
+                            <label>Name:</label>
+                            <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
+                        </div>
+
+                        <div className="txtb">
+                            <label>Email:</label>
+                            <input name="email" value={this.state.email} onChange={this.handleChange} />
+                        </div>
+
+                        <div className="txtb">
+                            <label>Message:</label>
+                            <textarea type="text" name="message" value={this.state.message} onChange={this.handleChange} />
+                        </div>
+
+                        <div className="btn">
+                            <input type="reset" value="Clear" />
+                            <input type="submit" value="Send" /></div>
+                    </form>
                 </Cell>
                 <Cell className="contact-right-grid" col={6}>
                     <h2>Contact Me</h2>
