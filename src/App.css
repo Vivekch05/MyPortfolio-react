@@ -1,14 +1,9 @@
-.header-color {
-  background: 'url(https://vsbytes.com/wp-content/uploads/2019/02/best-gaming-keyboard-india.jpeg)center/cover';
-}
-
 nav.link-font {
   font-size: 30px;
   color: white;
 }
 
 .home-grid {
-  background: 'url(https://vsbytes.com/wp-content/uploads/2019/02/best-gaming-keyboard-india.jpeg)center/cover';
   text-align: center;
   position: fixed;
   top: 0;
@@ -16,113 +11,160 @@ nav.link-font {
   width: 100%;
   height: 100%;
   opacity: 0.9;
+  background-size: cover;
 }
+
 .home-text {
   margin: auto;
   color: white;
 }
 
-.home-text1 p{
-  color: white; 
+.home-text1 p {
+  color: white;
   font-size: 25px;
   white-space: nowrap;
   overflow: hidden;
-  margin:auto;
+  margin: -20px auto;
   padding-top: 30px;
-  width: 50em;
-  animation: type 8s steps(60, end); 
+  text-shadow: 3px 3x black;
 }
 
-.home-text1 p:nth-child(2){
-  animation: type2 4s steps(30, end);
+/* 
+.home-text1 p:nth-child(2) {
+  animation: type2 4s steps(20, end);
 }
-.home-text1 span{
+
+.home-text1 label {
   animation: blink 1s infinite;
-  color: white;
+  color: red;
   font-weight: bold;
 }
-@keyframes type{ 
-  0%{width: 0;}
-} 
 
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
+@keyframes type {
+  0% {
+    width: 0;
+  }
 }
 
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  75%{width:0;}
+
+  100% {
+    width: 100;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+} */
 
 .projects-grid {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.resume-grid {
+  width: 100%;
 }
 
 .resume-right-col {
   background: white;
   color: black;
   padding: 5em;
+  min-width: 320px;
+  max-width: 100%;
 }
 
 .resume-left-col {
-  background: lightblue;
+  background:antiquewhite;
   color: black;
   padding: 5em;
+  min-width: 320px;
+  max-width:100;
 }
 
-.contact-left-grid {
-  background-image: linear-gradient(to bottom,lightblue,cornsilk);
-  color: black;
-  justify-content: center;
-  text-align: center;
-}
-
-.contact-left-grid h2 {
-  font-family: 'Anton', sans-serif;
-}
-
-.contact-left-grid p {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
-  padding: 3em;
-}
-
-.contact-right-grid {
-  text-align: center;
-  justify-content: center;
-  background: white;
-  padding-left: 5em;
-}
-
-.contact-right-grid h2 {
-  font-family: 'Anton', sans-serif;
-  color: black;
-}
-
-.contact-right-grid hr {
-  border-top: 5px dotted black;
-  margin: auto;
-  width: 50%;
-}
-
-.contact-list i {
-  font-size: 50px;
-  padding-right: 5rem;
-}
-
-.avater-img {
-  height: 300px;
-  padding-top: 0em;
-  width: 300px;
+.resume-left-col img {
+  height: auto;
+  max-width: 100%;
   border-radius: 100%;
   border: 1px solid white;
-  margin-top: 6em;
+  box-shadow: 2px 2px lightgrey;
+  margin: auto
 }
 
+@media screen and (min-width: 320px) {
+  .resume-left-col {
+    max-width: 100%;
+  }
+}
 
+@media screen and (min-width: 320px) {
+  .resume-right-col {
+    padding: 2em 5em 2em 1em;
+    max-width: 100%;
+    /* background:green; */
+  }
+}
+/* 
+ .home-background {
+  position: relative;
+  background: url(./images/home14.jpg) center/cover;
+
+}
+
+.home-background::after{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(127, 127, 127, 0.5);
+  background-image: radial-gradient(black 33%, transparent 33%);
+  background-size: 1px 1px;
+}    */
+
+/* .image {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Rathong_from_Zemathang2.jpg');
+  background-size: cover;
+}
+
+.image:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(127, 127, 127, 0.5);
+  background-image: radial-gradient(black 33%, transparent 33%);
+  background-size: 2px 2px;
+} */
+
+.avater-img {
+  height: auto;
+  padding-top: 0em;
+  width: 15%;
+  border-radius: 100%;
+  margin-top: 150px;
+  box-shadow: 5px 5px 5px  black;
+  min-width: 200px;
+}
 
 .social-links {
   display: flex;
@@ -133,9 +175,19 @@ nav.link-font {
 
 .social-links i {
   font-size: 3em;
-  color: lightcyan;
+  color: white;
   padding: 8px;
   margin-top: 1em;
+}
+
+.social-links i:hover {
+  color: red;
+  transform: rotate(1deg);
+  transform: rotate(-1deg);
+}
+
+.category-tabs {
+  margin-top: 30px;
 }
 
 .card-button {
@@ -148,6 +200,7 @@ nav.link-font {
   color: white;
   border-radius: 15px;
 }
+
 .card-button Button:hover {
   background: Green;
   color: white;
@@ -155,27 +208,260 @@ nav.link-font {
 }
 
 .card-text {
-  font-Family: 'Anton' sans-serif;
-  font-Weight: bold;
   color: black;
   border-Top: 1px solid grey
 }
 
-.aboutme-grid
-{
- background: white;
+.aboutme-grid {
+  /* background: url(./images/home14.jpg) center/cover; */
+  background:antiquewhite;
+
+  
+}
+
+.aboutme-right-grid {
+  margin-left: 30px;
+  margin-top: 100px;
+}
+
+.aboutme-right-grid>h3 {
+  font-family: 'Anton', sans-serif;
+  color: darkorange;
+  padding-left: 25px;
+  display: flex;
+}
+
+.aboutme-right-grid hr {
+  border-top: 5px solid white;
+  margin: auto;
+  width: 60%;
+  min-width: 250px;
+}
+
+.aboutme-left-grid {
   justify-content: center;
   text-align: center;
   padding: 5em;
   color: black;
 }
-.aboutme-grid h2 {
+
+.aboutme-left-grid p {
+  /* width: 90%; */
+  /* margin: auto; */
+  padding: 20px 10px;
+  /* margin-top: 50px; */
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-.aboutme-grid p {
+.aboutme-left-grid>h2 {
+  font-family: 'Anton', sans-serif;
+  color: black;
+}
+
+.aboutme-grid hr {
+  border-top: 5px solid black;
+  margin: auto;
+  width: 100%;
+}
+
+.aboutme-left-grid-button button {
+  width: 40%;
+  height: 50px;
+  background: coral;
+  border-radius: 50px;
+  color: black;
+  border: 1px solid red;
+  font-size: 20px;
+  min-width: 200px;
+  margin-top: 90px;
+  flex-wrap: wrap;
+  margin-right: 5px;
+}
+
+.aboutme-left-grid-button button:hover {
+  background: burlywood;
+  color: black;
+}
+
+.aboutme-left-grid-button a button i:hover {
+  transform: rotate(2deg);
+  transform: rotate(-2deg);
+}
+
+/* Contact Form  */
+
+.contact-grid {
+
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+/* .contact-list i {
+  font-size: 50px;
+  padding-right: 5rem;
+} */
+
+/* .contact-form{
+  max-width: 100%;
+}
+.contact-form-head {
+  min-width: 320px;
+  margin-top: 60px;
+}
+
+.contact-form-head h1 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+} */
+
+.contact-list-group {
+  max-width: 100%;
+  top: 50%;
+  text-align: center;
+  border-radius: 15px;
+  padding: 0px 40px;
+  min-width: 320px;
+}
+
+.contact-list-group h4 {
+  font-family: 'Anton', sans-serif;
+  color: white;
+}
+
+.contact-list-group hr {
+  border-top: 5px solid white;
+  margin: auto;
+  max-width: 100%;
+}
+.contact-list-item
+{
+  max-width: 100%;
+  margin: auto;
+}
+.contact-list-item a {
+  text-decoration: none;
+  color: white;
+  height: 40px;
+  width: 100%;
+  border-radius: 30px;
+  padding-top: 20px;
+  box-shadow: 2px 2px white;
+  border: 1px solid black;
+  
+}
+@media screen and (min-width: 320px) {
+  .contact-list-item {
+    max-width: 100%;
+  }
+  .contact-list-item a{
+    width: 100%;
+
+  }
+}
+
+
+.contact-list-item a:hover {
+  background-color: wheat;
+  color: black;
+}
+
+.contact-list-item i {
+  color: white;
+  border-radius: 100%;
+  margin-left: -15px;
+  height: 40px;
+  width: 50px;
+  padding-top: 20px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+  margin-right: -35px;
+  z-index: 1;
+}
+
+.contact-list-item i:hover {
+  transform: rotate(10deg);
+  transform: rotate(-10deg);
+}
+
+.contact-list-item:hover {
+  color: white;
+}
+
+.contact-form {
+  border-radius: 8px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px 50px;
+  border-right: 1px solid white;
+  min-width: 200px;
+}
+
+.contact-form h4 {
+  font-family: 'Anton', sans-serif;
+  color: white;
+}
+
+.contact-form hr {
+  border-top: 5px solid white;
+  width: 100%;
+}
+
+.txtb {
+  border: 1px solid white;
+  margin: 30px 0;
+  border-radius: 8px;
+  background: white;
+  max-width: 100%;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.txtb label {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  color: black;
   font-weight: bold;
 }
 
+.txtb input, .txtb textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  min-width: 200px;
+}
+
+@media screen and(min-width:200px)
+{
+  
+}
+
+.btn input {
+  display: inline-block;
+  background: coral;
+  color: white;
+  cursor: pointer;
+  margin-top: 0px 10px;
+  width: 48%;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin: 2px;
+  box-shadow: 2px 2px black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn input:hover {
+  background: burlywood;
+  color: black;
+}
 .btn input:hover {
   background: burlywood;
   color: black;

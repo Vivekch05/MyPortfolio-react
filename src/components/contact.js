@@ -58,8 +58,8 @@ export default class Contact extends Component {
                     <div className="txtb">
                             <label>Subject:</label>
                             <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange} />
-                        </div>
-                        <div className="txtb">
+                        </div>   
+                    <div className="txtb">
                             <label>Name:</label>
                             <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
                         </div>
@@ -79,33 +79,35 @@ export default class Contact extends Component {
                             <input type="submit" value="Send" /></div>
                     </form>
                 </Cell>
-                <Cell className="contact-right-grid" col={6}>
-                    <h2>Contact Me</h2>
-                    <hr />
-                    <div className="contact-list">
-                        <List>
-                            <ListItem>
-                                <ListItemContent style={{ fontSize: "25px", fontFamily: 'Anton' }}>
-                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                    (+91)-7062424346</ListItemContent>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemContent style={{ fontSize: "25px", fontFamily: 'Anton' }}>
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    vivek.kch05@gmail.com</ListItemContent>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemContent style={{ fontSize: "25px", fontFamily: 'Anton' }}>
-                                    <i class="fa fa-skype" aria-hidden="true"></i>
-                                    MyskypeId</ListItemContent>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemContent style={{ fontSize: "25px", fontFamily: 'Anton' }}>
-                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                    (+91)-7062424346</ListItemContent>
-                            </ListItem>
-                        </List>
-                    </div>
+                <Cell className="contact-list-group" col={6}>
+                    <List>
+                        <h4>Let's <span style={{ color: "red" }} >Connect</span></h4>
+                        <hr />
+                        <ListItem className="contact-list-item">
+                            <i class="fa fa-envelope fa-fw" style={{ background: 'green' }}></i>
+                            <a href="https://mail.google.com/" style={{ background: 'green' }} target="_blank" rel="noopener noreferrer">vivek.kch05@gmail.com</a>
+                        </ListItem>
+
+                        <ListItem className="contact-list-item">
+                            <i class="fa fa-facebook fa-fw" style={{ background: 'blue' }}></i>
+                            <a href="http://www.facebook.com/vivekkch" style={{ background: 'blue' }} target="_blank" rel="noopener noreferrer">facebook.com/vivekkch</a>
+                        </ListItem>
+
+                        <ListItem className="contact-list-item">
+                            <i class="fa fa-linkedin fa-fw" style={{ background: '#0e76a8' }}></i>
+                            <a href="https://www.linkedin.com/in/vivekch123/" style={{ background: '#0e76a8' }} target="_blank" rel="noopener noreferrer">linkedin.com/in/vivekch123/</a>
+                        </ListItem>
+
+                        <ListItem className="contact-list-item">
+                            <i class="fa fa-github fa-fw" style={{ background: '#2C3539' }}></i>
+                            <a href="http://github.com/Vivekch05" style={{ background: '#2C3539' }} target="_blank" rel="noopener noreferrer">github.com/Vivekch05/</a>
+                        </ListItem>
+
+                        <ListItem className="contact-list-item">
+                            <i class="fa fa-instagram fa-fw" style={{ background: '#F6358A' }}></i>
+                            <a href="http://www.instagram.com/vivek.kch05" style={{ background: '#F6358A' }} target="_blank" rel="noopener noreferrer">instagram.com/vivek.kch05/</a>
+                        </ListItem>
+                    </List>
                 </Cell>
             </Grid>
         )

@@ -1,45 +1,119 @@
 import React, { Component } from 'react'
-import { Grid, Cell } from 'react-mdl'
+import { Grid, Cell } from 'react-mdl';
+import profile from "../images/vivek.jpg";
 
 export default class Home extends Component {
 componentDidMount(){}
 
     render() {
+        var TxtRotate = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtRotate.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 300 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+            document.body.appendChild(css);
+        };
+
+
+
+
         return (
-            <div style={{width: "100%", margin:"auto"}}>
-                <Grid className="home-grid">
+            <div style={{ width: "100%", margin: "auto" }}>
+                <Grid  className="home-grid">
                     <Cell col={12}>
-                    <img 
-                     src="https://lh3.googleusercontent.com/GYnkEMviCLKYWWGODhovJvRhBlYsD7iseSntQ4fMihd_72ViY5OpbD_5xlcjei7GgsetEfRFzvU1oFK8BekEriITXeGlQumR1IMpii9zr9M4YaIJe390U52f4CEGIQof5ThhL5VyIGH8coMkAMS5mAT76srHePWjdFry99cojpIoKkXZr1txSExWQE5XLIhjCIfXKdEXluTyq4i4THryJK1By7OhF2Kx8MKo6sQ3Zggatrvpcll2ZUChqjLEEsjpMzleEy5Tg32IRfOeuJMf3yl2Fpz5WyFQhSPBOtDTNFvQokEi_qVmOVa3vOkbo6sqTPc4rh2K0XKFY0BADpmcT4iB5iN4OBRb3hxg1_q72MrdZVlxn8cyg6RhEFdY8SZrVmvT1h5LMSuXwHm6htkDhYNtnhFeE4BH1Nb8AgOGsQ5_Pr4eDlGtwOGSU7VA2xuYZ55_GclUc37r6tFs9RVfIM4P6S-SOft89G_VecGkFaXir7XFrcLhSXLqHrYOUczKMq_bkgsJaHERXHzJC4G6qgTRxoNtfTw4oCHureahF7baUO8rRublMzvJztV7azb_A_3dK10w69W6tVru-sFFgymbYFEpteR0AUY5QoaEu9xs2_gCcKd-vw1GK_5LnG5XgOtSNJ420cg0blCbn7M4eWYs35rwFLHGpKkWBhy8uTWJfkNbdwNAgcHdQoZbpf8=s883-no"
-                     alt="avater"
-                     className="avater-img"
-                     />
-                     <div className="home-text1">
-                         <p>Hey, I am Vivek chaurasia.</p>
-                         <p>I love web designing and problem solving.I also love to learn new technology and tools. :)<span>|</span></p>
-                     </div>
-                     <div className="social-links">
-                         {/* Linkedin*/}
-                        <a href="https://www.linkedin.com/in/vivekch123/" rel="noopener noreferrer" target="_blank">
-                        <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-                        </a>
+                        <img
+                            src={profile}
+                            alt="avater"
+                            className="avater-img"
+                        />
+                        {/* <div className="home-text1">
+                         <p>Hello there! I'm <span style={{color:'red',fontSize:'30px',fontWeight:'bold'}}>'Vivek Chaurasia'.</span></p>
+                         
+                         <p>I love web designing and problem solving.I also love to learn new technology and tools. :)<label>|</label></p>
+                     </div> */}
+                        <div className="home-text1">
+                            <p>Hello there!</p>
+                            <p>i'm <span style={{ color: "aliceblue",fontSize:"30px"}}>'Vivek Chaurasia'</span></p>
+                            <p>i love&nbsp;
+                            <span style={{ color: "darkorange",fontSize:"30px"}}
+                                    class="txt-rotate"
+                                    data-period="2000"
+                                    data-rotate='[ "web development","problem solving", "coding", "to learn new technology"]'></span>
+                            </p>
+                        </div>
 
-                        {/* GitHub*/}
-                        <a href="http://github.com/Vivekch05" rel="noopener noreferrer"  target="_blank">
-                        <i className="fa fa-github-square" aria-hidden="true"></i>
-                        </a>
 
-                        {/* Facebook*/}
-                        <a href="http://www.facebook.com/vivekkch" rel="noopener noreferrer" target="_blank">
-                        <i className="fa fa-facebook-square" aria-hidden="true"></i>
-                        </a>
+                        <div className="social-links">
+                            {/* Linkedin*/}
+                            <a href="https://www.linkedin.com/in/vivekch123/" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </a>
 
-                        {/* Instagram*/}
-                        <a href="http://www.instagram.com/vivek.kch05" rel="noopener noreferrer" target="_blank">
-                        <i className="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                     </div>
-                     </Cell>
+                            {/* GitHub*/}
+                            <a href="http://github.com/Vivekch05" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-github-square" aria-hidden="true"></i>
+                            </a>
+
+                            {/* Facebook*/}
+                            <a href="http://www.facebook.com/vivekkch" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+
+                            {/* Instagram*/}
+                            <a href="http://www.instagram.com/vivek.kch05" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </Cell>
                 </Grid>
             </div>
         )
