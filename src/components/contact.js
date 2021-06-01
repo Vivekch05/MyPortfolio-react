@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Cell, List, ListItem } from 'react-mdl';
+import {send} from 'emailjs-com'
 export default class Contact extends Component {
     constructor(props) {
         super(props);
@@ -16,9 +17,32 @@ export default class Contact extends Component {
         this.setState({ [e.target.name]: e.target.value });
         console.log(this.state);
     }
-    handleSubmit = (e) => {
+    
+     handleSubmit = (e) => {
         e.preventDefault();
-    }
+        let templateParams = {
+            name:this.state.name,
+            from_name: this.state.email,
+            to_name: 'vivek.ece18@gmail.com',
+            subject: this.state.subject,
+            message: this.state.message,
+            reply_to:this.state.email
+           }
+        send(
+            // 'gmail',
+          'service_*****',
+          'template_******',
+        //   this.initialState,
+        templateParams,
+          'user_*******'
+        )
+          .then((response) => {
+            alert('SUCCESS!', response.status, response.text);
+          })
+          .catch((err) => {
+            alert('FAILED...', err);
+          });
+      };
     handleReset = () => {
         this.setState(() => this.initialState);
         console.log(this.initialState);
@@ -31,7 +55,11 @@ export default class Contact extends Component {
                     <h4>Let's have a <span style={{ color: 'red', }}>chat</span> sometime</h4>
                     <hr />
                     <form onSubmit={this.handleSubmit} onReset={this.handleReset} style={{ marginTop: "20px" }}>
-                        <div className="txtb">
+                    <div className="txtb">
+                            <label>Subject:</label>
+                            <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange} />
+                        </div>   
+                    <div className="txtb">
                             <label>Name:</label>
                             <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
                         </div>

@@ -246,12 +246,13 @@ nav.link-font {
 }
 
 .aboutme-left-grid p {
-  width: 90%;
-  margin: auto;
-  padding-Top: 1.5em;
-  text-align: justify;
-  margin-top: 50px;
+  /* width: 90%; */
+  /* margin: auto; */
+  padding: 20px 10px;
+  /* margin-top: 50px; */
   font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .aboutme-left-grid>h2 {
@@ -460,4 +461,25 @@ nav.link-font {
 .btn input:hover {
   background: burlywood;
   color: black;
+}
+.btn input:hover {
+  background: burlywood;
+  color: black;
+}
+.all-page-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  /* max-height: 500px; */
+  /* overflow: auto; */
+}
+.react-pdf__Document canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+.react-pdf__Document {
+  padding: 0 10px;
+}
+.mdl-layout__drawer-button {
+  color: orangered !important;
 }
